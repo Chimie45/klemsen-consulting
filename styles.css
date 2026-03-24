@@ -148,6 +148,7 @@ img { max-width: 100%; height: auto; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
+  background: var(--slate);
   transition: all .4s ease;
 }
 .nav-inner {
@@ -160,22 +161,35 @@ img { max-width: 100%; height: auto; }
   height: 80px;
 }
 .nav.scrolled {
-  background: rgba(247,246,242,.97);
+  background: var(--slate);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border);
-}
-/* When nav is on a lime background (home hero) */
-.nav-on-lime.scrolled {
-  background: rgba(247,246,242,.97);
+  border-bottom: 1px solid rgba(255,255,255,.05);
 }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 12px;
 }
-.nav-logo img {
-  height: 48px;
-  width: auto;
+.nav-logo-icon {
+  height: 42px;
+  width: 42px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.nav-logo-text {
+  font-family: var(--font-body);
+  font-size: .95rem;
+  letter-spacing: 1.5px;
+  color: var(--white);
+}
+.nav-logo-text strong {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.nav-logo-divider {
+  color: rgba(255,255,255,.25);
+  font-weight: 300;
+  margin: 0 2px;
 }
 .nav-links {
   display: flex;
@@ -188,13 +202,13 @@ img { max-width: 100%; height: auto; }
   font-weight: 500;
   letter-spacing: .8px;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: rgba(255,255,255,.55);
   position: relative;
   padding-bottom: 4px;
 }
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--slate);
+  color: var(--white);
 }
 .nav-links a.active::after {
   content: '';
@@ -204,14 +218,14 @@ img { max-width: 100%; height: auto; }
   background: var(--lime);
   border-radius: 2px;
 }
-/* Nav on lime hero — dark text already works, but we adjust the CTA */
-.nav-on-lime .nav-links a { color: var(--text-on-lime); opacity: .7; }
+/* Remove old lime-hero nav overrides since nav is always slate now */
+.nav-on-lime .nav-links a { color: rgba(255,255,255,.55); }
 .nav-on-lime .nav-links a:hover,
-.nav-on-lime .nav-links a.active { opacity: 1; color: var(--slate); }
+.nav-on-lime .nav-links a.active { color: var(--white); opacity: 1; }
 
 .nav-cta {
-  background: var(--slate) !important;
-  color: var(--white) !important;
+  background: var(--lime) !important;
+  color: var(--slate) !important;
   padding: 10px 24px !important;
   border-radius: 8px !important;
   font-weight: 600 !important;
@@ -219,7 +233,7 @@ img { max-width: 100%; height: auto; }
   opacity: 1 !important;
   transition: all var(--transition);
 }
-.nav-cta:hover { background: var(--black) !important; transform: translateY(-1px); }
+.nav-cta:hover { background: var(--lime-light) !important; transform: translateY(-1px); }
 .nav-cta::after { display: none !important; }
 
 .nav-hamburger {
@@ -233,7 +247,7 @@ img { max-width: 100%; height: auto; }
 }
 .nav-hamburger span {
   width: 24px; height: 2px;
-  background: var(--slate);
+  background: var(--white);
   border-radius: 2px;
   transition: all .3s;
 }
@@ -241,10 +255,9 @@ img { max-width: 100%; height: auto; }
   display: none;
   position: fixed;
   top: 80px; left: 0; right: 0;
-  background: rgba(247,246,242,.98);
-  backdrop-filter: blur(16px);
+  background: var(--slate);
   padding: 24px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(255,255,255,.08);
   flex-direction: column;
   gap: 16px;
   z-index: 999;
@@ -252,10 +265,10 @@ img { max-width: 100%; height: auto; }
 .nav-mobile a {
   font-size: .95rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: rgba(255,255,255,.55);
   padding: 8px 0;
 }
-.nav-mobile a:hover, .nav-mobile a.active { color: var(--slate); }
+.nav-mobile a:hover, .nav-mobile a.active { color: var(--white); }
 .nav-mobile.open { display: flex; }
 
 /* ─── Hero (LIME background) ─── */
