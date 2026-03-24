@@ -13,8 +13,7 @@
   <nav class="nav nav-on-lime">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="images/logo-square.jpg" alt="K" class="nav-logo-icon">
-        <span class="nav-logo-text"><strong>KLEMSEN</strong> <span class="nav-logo-divider">|</span> Consulting</span>
+        <img src="images/header-logo.png" alt="Klemsen Consulting" class="nav-logo-img">
       </a>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
@@ -98,7 +97,7 @@
     </div>
   </section>
 
-  <!-- ═══ WHY US — white/light bg ═══ -->
+  <!-- ═══ WHY US ═══ -->
   <section class="section">
     <div class="container">
       <div style="text-align:center; max-width: 600px; margin: 0 auto 64px;">
@@ -107,25 +106,33 @@
         <p class="anim" style="margin-top: 12px;">From teachers to business owners, first-time filers to those years behind — we've handled it all with zero client penalties.</p>
       </div>
 
-      <div class="service-grid">
-        <div class="card anim">
-          <div class="service-icon">🌏</div>
-          <h3>Global Expertise</h3>
-          <p style="margin-top:10px;">Clients across Korea, Japan, China, Europe, and beyond. We work remotely with expats everywhere.</p>
+      <div class="anim" style="display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr; gap: 0; align-items: start; max-width: 960px; margin: 0 auto;" id="why-grid">
+        <div style="padding: 0 40px; text-align: center;">
+          <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--slate); line-height: 1; margin-bottom: 16px;">Global</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--slate);">Expertise</h3>
+          <p style="font-size: .9rem; line-height: 1.7;">Clients across Korea, Japan, China, Europe, and beyond. We work remotely with expats everywhere.</p>
         </div>
-        <div class="card anim">
-          <div class="service-icon">🛡️</div>
-          <h3>Zero Penalties</h3>
-          <p style="margin-top:10px;">No client has ever been fined or penalized for late filing. Our thorough disclosures protect you.</p>
+        <div style="width: 1px; height: 100%; background: var(--border);"></div>
+        <div style="padding: 0 40px; text-align: center;">
+          <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--slate); line-height: 1; margin-bottom: 16px;">Zero</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--slate);">Penalties</h3>
+          <p style="font-size: .9rem; line-height: 1.7;">No client has ever been fined or penalized for late filing. Our thorough disclosures protect you.</p>
         </div>
-        <div class="card anim">
-          <div class="service-icon">📋</div>
-          <h3>Clear Process</h3>
-          <p style="margin-top:10px;">Simple checklists, upfront quotes, and fast response times. No surprises, no pressure.</p>
+        <div style="width: 1px; height: 100%; background: var(--border);"></div>
+        <div style="padding: 0 40px; text-align: center;">
+          <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--slate); line-height: 1; margin-bottom: 16px;">Clear</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--slate);">Process</h3>
+          <p style="font-size: .9rem; line-height: 1.7;">Simple checklists, upfront quotes, and fast response times. No surprises, no pressure.</p>
         </div>
       </div>
     </div>
   </section>
+  <style>
+    @media (max-width: 768px) {
+      #why-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+      #why-grid > div[style*="width: 1px"] { width: 60px !important; height: 1px !important; margin: 0 auto; }
+    }
+  </style>
 
   <!-- ═══ ABOUT PREVIEW — with Katie photo ═══ -->
   <section class="section" style="background: var(--bg-alt);">
@@ -245,9 +252,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-            <img src="images/logo-square.jpg" alt="K" style="height:38px;width:38px;border-radius:8px;">
-            <span style="font-family:var(--font-body);font-size:.9rem;color:var(--white);letter-spacing:1.5px;"><strong>KLEMSEN</strong> <span style="color:rgba(255,255,255,.25);font-weight:300;margin:0 2px;">|</span> Consulting</span>
+          <div style="margin-bottom:16px;">
+            <img src="images/header-logo.png" alt="Klemsen Consulting" style="height:40px;width:auto;">
           </div>
           <p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p>
         </div>
