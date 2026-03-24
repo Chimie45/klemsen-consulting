@@ -168,28 +168,10 @@ img { max-width: 100%; height: auto; }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
-.nav-logo-icon {
-  height: 42px;
-  width: 42px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.nav-logo-text {
-  font-family: var(--font-body);
-  font-size: .95rem;
-  letter-spacing: 1.5px;
-  color: var(--white);
-}
-.nav-logo-text strong {
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-.nav-logo-divider {
-  color: rgba(255,255,255,.25);
-  font-weight: 300;
-  margin: 0 2px;
+.nav-logo-img {
+  height: 40px;
+  width: auto;
 }
 .nav-links {
   display: flex;
