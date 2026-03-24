@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Klemsen Consulting</title>
-  <meta name="description" content="Get in touch with Klemsen Consulting for US expat tax preparation. Email, phone, or send us a message.">
+  <meta name="description" content="Get in touch with Klemsen Consulting for US expat tax preparation.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- ═══ NAV ═══ -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="images/header-logo.png" alt="Klemsen Consulting" class="nav-logo-img">
-      </a>
+      <a href="index.html" class="nav-logo"><img src="images/header-logo.png" alt="Klemsen Consulting" class="nav-logo-img"></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,119 +19,69 @@
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
       </ul>
-      <button class="nav-hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
     <div class="nav-mobile">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="korean-taxes.html">Korean Taxes</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html" class="active">Contact Us</a>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="korean-taxes.html">Korean Taxes</a><a href="faq.html">FAQ</a><a href="contact.html" class="active">Contact Us</a>
     </div>
   </nav>
 
-  <!-- ═══ PAGE HEADER ═══ -->
-  <section style="background: var(--slate); padding: 160px 0 80px; position: relative; overflow: hidden;">
-    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 60% 40%,rgba(187,224,36,.06),transparent 60%);"></div>
-    <div class="container" style="position:relative;z-index:1;">
+  <section class="page-header">
+    <div class="container">
       <div class="section-label section-label-light animate">Contact Us</div>
-      <h1 class="animate animate-d1" style="color: var(--white); max-width: 600px;">
-        Let's get your taxes <em>sorted</em>
-      </h1>
-      <p class="animate animate-d2" style="color: rgba(255,255,255,.55); max-width: 520px; margin-top: 16px; font-size: 1.1rem;">
-        Reach out by email, phone, or the form below. We typically respond within one business day.
-      </p>
+      <h1 class="animate animate-d1">Let's get your taxes <em>sorted</em></h1>
+      <p class="animate animate-d2">Reach out by email, phone, or the form below. We typically respond within one business day.</p>
     </div>
   </section>
 
-  <!-- ═══ CONTACT CONTENT ═══ -->
   <section class="section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 64px; align-items: start;" class="contact-grid">
+      <div class="contact-grid">
 
         <!-- Left: Contact info -->
         <div>
-          <h2 class="anim" style="margin-bottom: 12px;">Get in <em>touch</em></h2>
-          <p class="anim" style="margin-bottom: 40px;">
-            Whether you need to file this year, catch up on back taxes, or just have a quick question — we're here for you.
-          </p>
+          <h2 class="anim" style="margin-bottom:12px;">Get in <em>touch</em></h2>
+          <p class="anim" style="margin-bottom:32px;">Whether you need to file this year, catch up on back taxes, or just have a quick question — we're here for you.</p>
 
-          <!-- Contact cards -->
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <div class="anim" style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; gap: 20px;">
-              <div style="width: 52px; height: 52px; border-radius: 12px; background: rgba(187,224,36,.1); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">📧</div>
-              <div>
-                <div style="font-size: .8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;">Email</div>
-                <a href="mailto:Klemsenconsulting@gmail.com" style="font-size: 1rem; font-weight: 500; color: var(--blue);">Klemsenconsulting@gmail.com</a>
-              </div>
+          <div class="anim">
+            <div class="contact-info-item">
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value"><a href="mailto:Klemsenconsulting@gmail.com">Klemsenconsulting@gmail.com</a></div>
             </div>
-
-            <div class="anim" style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; gap: 20px;">
-              <div style="width: 52px; height: 52px; border-radius: 12px; background: rgba(0,158,216,.08); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">📱</div>
-              <div>
-                <div style="font-size: .8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;">Phone</div>
-                <a href="tel:010-5132-7226" style="font-size: 1rem; font-weight: 500; color: var(--text-primary);">010-5132-7226</a>
-                <div style="font-size: .8rem; color: var(--text-muted); margin-top: 2px; font-style: italic;">I'm a real human and typically answer "hello," so don't be alarmed. My name is Katie.</div>
-              </div>
+            <div class="contact-info-item">
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value"><a href="tel:010-5132-7226">010-5132-7226</a></div>
+              <div class="contact-info-note">I'm a real human and typically answer "hello," so don't be alarmed. My name is Katie.</div>
             </div>
-
-            <div class="anim" style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; gap: 20px;">
-              <div style="width: 52px; height: 52px; border-radius: 12px; background: rgba(35,52,62,.06); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">📍</div>
-              <div>
-                <div style="font-size: .8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;">Location</div>
-                <div style="font-size: 1rem; font-weight: 500;">Yongin, Gyeonggi, South Korea</div>
-                <div style="font-size: .8rem; color: var(--text-muted); margin-top: 2px;">We work 100% remotely — clients everywhere welcome</div>
-              </div>
+            <div class="contact-info-item">
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Yongin, Gyeonggi, South Korea</div>
+              <div class="contact-info-note">We work 100% remotely — clients everywhere welcome</div>
             </div>
-
-            <div class="anim" style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; gap: 20px;">
-              <div style="width: 52px; height: 52px; border-radius: 12px; background: rgba(187,224,36,.1); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">💳</div>
-              <div>
-                <div style="font-size: .8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;">Payment Methods</div>
-                <div style="font-size: .95rem; color: var(--text-secondary);">Korean bank transfer · US bank transfer · PayPal</div>
-              </div>
+            <div class="contact-info-item">
+              <div class="contact-info-label">Payment Methods</div>
+              <div class="contact-info-value">Korean bank transfer · US bank transfer · PayPal</div>
             </div>
           </div>
 
-          <!-- Social -->
-          <div class="anim" style="margin-top: 32px;">
-            <div style="font-size: .8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;">Follow us</div>
-            <a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 10px 20px; font-size: .9rem; font-weight: 500; color: var(--text-secondary); transition: all var(--transition);">
-              <span style="font-weight: 700; color: #1877F2;">f</span> Facebook
-            </a>
+          <div class="anim" style="margin-top:32px;">
+            <div class="contact-info-label" style="margin-bottom:12px;">Follow us</div>
+            <a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" style="font-size:.9rem;font-weight:500;color:var(--blue);">Facebook →</a>
           </div>
         </div>
 
-        <!-- Right: Contact form -->
+        <!-- Right: Form -->
         <div class="anim">
-          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 48px;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Send us a message</h3>
-            <p style="font-size: .9rem; color: var(--text-muted); margin-bottom: 32px;">Fill out the form below and we'll get back to you promptly.</p>
+          <div style="background:var(--white);border:1px solid var(--border);padding:40px;">
+            <h3 style="font-size:1.4rem;margin-bottom:8px;">Send us a message</h3>
+            <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:28px;">Fill out the form and we'll get back to you promptly.</p>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-              <div class="form-group">
-                <label class="form-label" for="firstName">First Name</label>
-                <input class="form-input" type="text" id="firstName" placeholder="Your first name">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="lastName">Last Name</label>
-                <input class="form-input" type="text" id="lastName" placeholder="Your last name">
-              </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+              <div class="form-group"><label class="form-label" for="firstName">First Name</label><input class="form-input" type="text" id="firstName" placeholder="Your first name"></div>
+              <div class="form-group"><label class="form-label" for="lastName">Last Name</label><input class="form-input" type="text" id="lastName" placeholder="Your last name"></div>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="email">Email Address</label>
-              <input class="form-input" type="email" id="email" placeholder="you@example.com">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="phone">Phone (Optional)</label>
-              <input class="form-input" type="tel" id="phone" placeholder="Your phone number">
-            </div>
-
+            <div class="form-group"><label class="form-label" for="email">Email Address</label><input class="form-input" type="email" id="email" placeholder="you@example.com"></div>
+            <div class="form-group"><label class="form-label" for="phone">Phone (Optional)</label><input class="form-input" type="tel" id="phone" placeholder="Your phone number"></div>
             <div class="form-group">
               <label class="form-label" for="service">Service Interested In</label>
               <select class="form-input" id="service" style="cursor:pointer;">
@@ -151,93 +97,36 @@
                 <option value="other">Other / Not Sure</option>
               </select>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="message">Message</label>
-              <textarea class="form-textarea" id="message" placeholder="Tell us about your situation — how can we help?"></textarea>
-            </div>
-
-            <button type="button" class="btn btn-dark" style="width: 100%; justify-content: center; margin-top: 8px;" onclick="handleSubmit()">
-              Send Message →
-            </button>
-
-            <p style="font-size: .8rem; color: var(--text-muted); margin-top: 16px; text-align: center;">
-              We never share your information. Responses typically within 1 business day.
-            </p>
+            <div class="form-group"><label class="form-label" for="message">Message</label><textarea class="form-textarea" id="message" placeholder="Tell us about your situation — how can we help?"></textarea></div>
+            <button type="button" class="btn btn-dark" style="width:100%;justify-content:center;margin-top:8px;" onclick="handleSubmit()">Send Message →</button>
+            <p style="font-size:.8rem;color:var(--text-muted);margin-top:16px;text-align:center;">We never share your information. Responses typically within 1 business day.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <div style="margin-bottom:16px;">
-            <img src="images/header-logo.png" alt="Klemsen Consulting" style="height:40px;width:auto;">
-          </div>
-          <p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-              </ul>
-        </div>
-        <div>
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="korean-taxes.html">Korean Taxes</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Get in Touch</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:Klemsenconsulting@gmail.com">Klemsenconsulting@gmail.com</a></li>
-            <li><a href="tel:010-5132-7226">010-5132-7226</a></li>
-            <li>Yongin, Gyeonggi, South Korea</li>
-          </ul>
-        </div>
+        <div class="footer-brand"><div style="margin-bottom:16px;"><img src="images/logo-small.avif" alt="Klemsen Consulting" style="height:44px;"></div><p>Expert US expat tax preparation based in Yongin, South Korea.</p></div>
+        <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li></ul></div>
+        <div><h4>Resources</h4><ul class="footer-links"><li><a href="korean-taxes.html">Korean Taxes</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+        <div><h4>Get in Touch</h4><ul class="footer-links"><li><a href="mailto:Klemsenconsulting@gmail.com">Klemsenconsulting@gmail.com</a></li><li><a href="tel:010-5132-7226">010-5132-7226</a></li><li>Yongin, Gyeonggi, South Korea</li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 Klemsen Consulting. All rights reserved.</span>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-        </div>
-      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Klemsen Consulting. All rights reserved.</span><div class="footer-social"><a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" aria-label="Facebook">f</a></div></div>
     </div>
   </footer>
-
   <script src="main.js"></script>
   <script>
-    // @ts-check
-    function handleSubmit() {
-      const firstName = /** @type {HTMLInputElement} */ (document.getElementById('firstName')).value;
-      const lastName = /** @type {HTMLInputElement} */ (document.getElementById('lastName')).value;
-      const email = /** @type {HTMLInputElement} */ (document.getElementById('email')).value;
-      const message = /** @type {HTMLTextAreaElement} */ (document.getElementById('message')).value;
-
-      if (!firstName || !email || !message) {
-        alert('Please fill in your name, email, and message.');
-        return;
-      }
-
-      // In production, this would POST to a server endpoint
-      // For now, show success state
-      const btn = document.querySelector('.btn-primary');
-      if (btn) {
-        btn.textContent = '✓ Message Sent!';
-        btn.style.background = 'var(--lime)';
-        btn.style.color = 'var(--black)';
-        /** @type {HTMLButtonElement} */ (btn).disabled = true;
-      }
-    }
+  function handleSubmit() {
+    var fn = document.getElementById('firstName').value;
+    var em = document.getElementById('email').value;
+    var msg = document.getElementById('message').value;
+    if (!fn || !em || !msg) { alert('Please fill in your name, email, and message.'); return; }
+    var btn = document.querySelector('.btn-dark[onclick]');
+    if (btn) { btn.textContent = '✓ Message Sent!'; btn.style.background = 'var(--lime)'; btn.style.color = 'var(--slate)'; btn.disabled = true; }
+  }
   </script>
 </body>
 </html>
