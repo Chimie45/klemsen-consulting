@@ -13,8 +13,7 @@
   <nav class="nav scrolled">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-mark">K</div>
-        <span class="nav-logo-text">Klemsen Consulting</span>
+        <img src="images/logo-small.avif" alt="Klemsen Consulting">
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -41,10 +40,10 @@
   </nav>
 
   <!-- ═══ PAGE HEADER ═══ -->
-  <section style="background: var(--main-dark); padding: 160px 0 80px; position: relative; overflow: hidden;">
+  <section style="background: var(--slate); padding: 160px 0 80px; position: relative; overflow: hidden;">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 60% 40%,rgba(187,224,36,.06),transparent 60%);"></div>
     <div class="container" style="position:relative;z-index:1;">
-      <div class="section-label animate" style="color: var(--main-bright);">Contact Us</div>
+      <div class="section-label section-label-light animate">Contact Us</div>
       <h1 class="animate animate-d1" style="color: var(--white); max-width: 600px;">
         Let's get your taxes <em>sorted</em>
       </h1>
@@ -72,7 +71,7 @@
               <div style="width: 52px; height: 52px; border-radius: 12px; background: rgba(187,224,36,.1); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">📧</div>
               <div>
                 <div style="font-size: .8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;">Email</div>
-                <a href="mailto:Klemsenconsulting@gmail.com" style="font-size: 1rem; font-weight: 500; color: var(--light-accent);">Klemsenconsulting@gmail.com</a>
+                <a href="mailto:Klemsenconsulting@gmail.com" style="font-size: 1rem; font-weight: 500; color: var(--blue);">Klemsenconsulting@gmail.com</a>
               </div>
             </div>
 
@@ -160,7 +159,7 @@
               <textarea class="form-textarea" id="message" placeholder="Tell us about your situation — how can we help?"></textarea>
             </div>
 
-            <button type="button" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 8px;" onclick="handleSubmit()">
+            <button type="button" class="btn btn-dark" style="width: 100%; justify-content: center; margin-top: 8px;" onclick="handleSubmit()">
               Send Message →
             </button>
 
@@ -178,9 +177,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-            <div class="nav-logo-mark">K</div>
-            <span style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);">Klemsen Consulting</span>
+          <div style="margin-bottom:16px;">
+            <img src="images/logo-small.avif" alt="Klemsen Consulting" style="height:44px;">
           </div>
           <p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p>
         </div>
@@ -238,8 +236,8 @@
       const btn = document.querySelector('.btn-primary');
       if (btn) {
         btn.textContent = '✓ Message Sent!';
-        btn.style.background = 'var(--main-bright)';
-        btn.style.color = 'var(--dark-accent)';
+        btn.style.background = 'var(--lime)';
+        btn.style.color = 'var(--black)';
         /** @type {HTMLButtonElement} */ (btn).disabled = true;
       }
     }

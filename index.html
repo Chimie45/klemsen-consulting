@@ -10,14 +10,12 @@
 <body>
 
   <!-- ═══ NAV ═══ -->
-  <nav class="nav">
+  <nav class="nav nav-on-lime">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-mark">K</div>
-        <span class="nav-logo-text">Klemsen Consulting</span>
+        <img src="images/logo-small.avif" alt="Klemsen Consulting">
       </a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
@@ -40,13 +38,13 @@
     </div>
   </nav>
 
-  <!-- ═══ HERO ═══ -->
+  <!-- ═══ HERO — LIME GREEN ═══ -->
   <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg-pattern"></div>
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <div class="hero-card-badge animate" style="margin-bottom: 28px;">
+          <div class="hero-badge animate">
             <div class="dot"></div>
             <span>Now accepting 2025 tax year clients</span>
           </div>
@@ -55,13 +53,13 @@
             Your taxes.<br><em>Uncomplicated.</em>
           </h1>
 
-          <p class="animate animate-d2">
+          <p class="hero-sub animate animate-d2">
             Expert US expat tax preparation based in South Korea. We make filing your federal and state taxes painless — whether you're current or years behind.
           </p>
 
           <div class="animate animate-d3" style="display: flex; gap: 16px; flex-wrap: wrap;">
-            <a href="contact.html" class="btn btn-bright">Start Filing Today →</a>
-            <a href="services.html" class="btn btn-outline" style="color: var(--white); border-color: rgba(255,255,255,.2);">View Services</a>
+            <a href="contact.html" class="btn btn-dark">Start Filing Today →</a>
+            <a href="services.html" class="btn btn-outline-dark">View Services</a>
           </div>
 
           <div class="hero-stats animate animate-d4">
@@ -101,8 +99,8 @@
     </div>
   </section>
 
-  <!-- ═══ WHY US ═══ -->
-  <section class="section" style="background: var(--bg);">
+  <!-- ═══ WHY US — white/light bg ═══ -->
+  <section class="section">
     <div class="container">
       <div style="text-align:center; max-width: 600px; margin: 0 auto 64px;">
         <div class="section-label anim" style="justify-content:center;">Why Klemsen Consulting</div>
@@ -110,7 +108,7 @@
         <p class="anim" style="margin-top: 12px;">From teachers to business owners, first-time filers to those years behind — we've handled it all with zero client penalties.</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;" class="service-grid">
+      <div class="service-grid">
         <div class="card anim">
           <div class="service-icon">🌏</div>
           <h3>Global Expertise</h3>
@@ -130,60 +128,79 @@
     </div>
   </section>
 
-  <!-- ═══ SERVICES PREVIEW ═══ -->
+  <!-- ═══ ABOUT PREVIEW — with Katie photo ═══ -->
   <section class="section" style="background: var(--bg-alt);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" class="about-grid">
-        <div>
-          <div class="section-label anim">Our Services</div>
-          <h2 class="anim">Everything you need to<br>file with <em>confidence</em></h2>
-          <p class="anim" style="margin-top: 16px; margin-bottom: 32px;">
-            Whether it's a standard federal return, catching up on years of back taxes, or navigating complex investment income — we have a package tailored for you.
-          </p>
-
-          <div style="display: flex; flex-direction: column; gap: 16px;" class="anim">
-            <div style="display: flex; align-items: center; gap: 14px;">
-              <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--main-bright); flex-shrink:0;"></div>
-              <span style="font-size: .95rem; color: var(--text-secondary);">Expat Federal Package — from $200</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 14px;">
-              <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--light-accent); flex-shrink:0;"></div>
-              <span style="font-size: .95rem; color: var(--text-secondary);">Streamlined Catch-up — $900</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 14px;">
-              <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--main-dark); flex-shrink:0;"></div>
-              <span style="font-size: .95rem; color: var(--text-secondary);">Back Taxes, State Filing, FBAR &amp; more</span>
+      <div class="about-grid" style="align-items: center;">
+        <div class="anim">
+          <div style="background: var(--slate); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
+            <img src="images/katie.avif" alt="Katie Klemsen" style="width: 100%; display: block; aspect-ratio: 1; object-fit: cover;">
+            <div style="padding: 28px 32px; text-align: center;">
+              <h3 style="color: var(--white); font-size: 1.4rem; margin-bottom: 4px;">Katie Klemsen</h3>
+              <p style="color: var(--lime); font-size: .85rem; font-weight: 500; margin: 0;">Founder &amp; Lead Tax Preparer</p>
             </div>
           </div>
+        </div>
+        <div>
+          <div class="section-label anim">About Us</div>
+          <h2 class="anim">A specialty built on <em>real experience</em></h2>
+          <p class="anim" style="margin-top: 16px;">
+            Having lived overseas for more than 17 years, Katie has developed deep expertise in preparing tax returns for US expats — including FBARs, FATCA compliance, and navigating the unique complexities of living and earning abroad.
+          </p>
+          <p class="anim" style="margin-top: 12px; margin-bottom: 32px;">
+            You'll never feel rushed or pressured. Just honest, upfront quotes and a genuine commitment to making you happy.
+          </p>
+          <a href="about.html" class="btn btn-lime anim">Read Our Story →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <a href="services.html" class="btn btn-primary anim" style="margin-top: 32px;">
-            See All Services →
-          </a>
+  <!-- ═══ SERVICES PREVIEW ═══ -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 48px;">
+        <div class="section-label anim" style="justify-content:center;">Our Services</div>
+        <h2 class="anim">Everything you need to file with <em>confidence</em></h2>
+      </div>
+
+      <div class="two-col">
+        <!-- Featured: Expat Package -->
+        <div class="anim" style="background: var(--lime); border-radius: var(--radius-lg); padding: 40px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -30px; right: -30px; width: 120px; height: 120px; border-radius: 50%; background: rgba(35,52,62,.05);"></div>
+          <div style="display: inline-block; background: rgba(35,52,62,.1); border-radius: 6px; padding: 6px 14px; font-size: .75rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); margin-bottom: 16px;">Most Popular</div>
+          <h3 style="color: var(--slate); font-size: 1.5rem; margin-bottom: 6px;">Expat Federal Package</h3>
+          <div style="color: var(--slate); font-weight: 700; font-size: 1.3rem; margin-bottom: 16px; opacity: .8;">From $200 <span style="font-size: .8rem; font-weight: 400; opacity: .6;">/ ₩200,000</span></div>
+          <p style="color: var(--text-on-lime); opacity: .7; font-size: .9rem; line-height: 1.7; margin-bottom: 20px;">
+            Standard federal filing for salaried expats. Includes 1040, Schedule A & B, Form 2555/1116, healthcare paperwork, and a comprehensive IRS disclosure.
+          </p>
+          <a href="contact.html" class="btn btn-dark" style="position: relative;">Get Started →</a>
         </div>
 
-        <div class="anim" style="background: var(--main-dark); border-radius: var(--radius-lg); padding: 48px; position: relative; overflow: hidden;">
-          <div style="position: absolute; top: -30px; right: -30px; width: 120px; height: 120px; border-radius: 50%; background: rgba(187,224,36,.08);"></div>
-          <div style="position: absolute; bottom: -20px; left: -20px; width: 80px; height: 80px; border-radius: 50%; background: rgba(0,158,216,.06);"></div>
-          <h3 style="color: var(--white); font-size: 1.6rem; margin-bottom: 8px; position:relative;">The Streamlined Package</h3>
-          <div style="color: var(--main-bright); font-weight: 600; font-size: .9rem; margin-bottom: 20px; position:relative;">$900 — Wipe the slate clean</div>
-          <p style="color: rgba(255,255,255,.55); font-size: .9rem; line-height: 1.8; position:relative;">
-            Fallen behind 5+ years? The Streamlined Foreign Offshore Procedure clears your record. Includes current year federal filing plus three back years. It's designed for well-intentioned taxpayers who want to get right with the IRS.
+        <!-- Featured: Streamlined -->
+        <div class="anim" style="background: var(--slate); border-radius: var(--radius-lg); padding: 40px; position: relative; overflow: hidden;">
+          <div style="position: absolute; bottom: -20px; left: -20px; width: 100px; height: 100px; border-radius: 50%; background: rgba(187,224,36,.06);"></div>
+          <div style="display: inline-block; background: rgba(187,224,36,.12); border-radius: 6px; padding: 6px 14px; font-size: .75rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--lime); margin-bottom: 16px;">Catch-Up Filing</div>
+          <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 6px;">Streamlined Package</h3>
+          <div style="color: var(--lime); font-weight: 700; font-size: 1.3rem; margin-bottom: 16px;">$900 <span style="font-size: .8rem; color: rgba(255,255,255,.4); font-weight: 400;">/ ₩900,000</span></div>
+          <p style="color: rgba(255,255,255,.6); font-size: .9rem; line-height: 1.7; margin-bottom: 20px;">
+            5+ years behind? The Streamlined Foreign Offshore Procedure wipes the slate clean. Includes current year + three back years of federal taxes.
           </p>
-          <a href="services.html" class="btn btn-bright" style="margin-top: 24px; position:relative;">Learn More</a>
+          <a href="services.html" class="btn btn-lime" style="position: relative;">View All Services →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══ TESTIMONIAL PREVIEW ═══ -->
-  <section class="section" style="background: var(--bg);">
+  <section class="section" style="background: var(--bg-alt);">
     <div class="container">
       <div style="text-align:center; max-width:500px; margin: 0 auto 48px;">
         <div class="section-label anim" style="justify-content:center;">Testimonials</div>
         <h2 class="anim">Trusted by expats <em>worldwide</em></h2>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;" class="about-grid">
+      <div class="two-col">
         <div class="testimonial-card anim">
           <p>Katie and Allen are professional and thorough. I came to Korea not understanding the extent of my filing duties and neglected my taxes for years. The process of completing my back taxes was made painless with Klemsen Consulting. I've stayed current for 3 years and continue to be a loyal customer.</p>
           <div class="testimonial-author">
@@ -207,7 +224,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 40px;">
-        <a href="testimonials.html" class="btn btn-outline anim">Read More Reviews →</a>
+        <a href="testimonials.html" class="btn btn-outline-dark anim">Read More Reviews →</a>
       </div>
     </div>
   </section>
@@ -219,8 +236,8 @@
         <h2>Ready to get started?</h2>
         <p>Whether you need to file this year's return or catch up on years of back taxes, we're here to help — no judgment, no pressure.</p>
         <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1;">
-          <a href="contact.html" class="btn btn-bright">Contact Us Today →</a>
-          <a href="faq.html" class="btn btn-outline" style="color: var(--white); border-color: rgba(255,255,255,.2);">Read the FAQ</a>
+          <a href="contact.html" class="btn btn-dark">Contact Us Today →</a>
+          <a href="faq.html" class="btn btn-outline-dark">Read the FAQ</a>
         </div>
       </div>
     </div>
@@ -231,9 +248,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-            <div class="nav-logo-mark">K</div>
-            <span style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);">Klemsen Consulting</span>
+          <div style="margin-bottom: 16px;">
+            <img src="images/logo-small.avif" alt="Klemsen Consulting" style="height: 44px;">
           </div>
           <p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p>
         </div>

@@ -13,8 +13,7 @@
   <nav class="nav scrolled">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-mark">K</div>
-        <span class="nav-logo-text">Klemsen Consulting</span>
+        <img src="images/logo-small.avif" alt="Klemsen Consulting">
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -41,10 +40,10 @@
   </nav>
 
   <!-- ═══ PAGE HEADER ═══ -->
-  <section style="background: var(--main-dark); padding: 160px 0 80px; position: relative; overflow: hidden;">
+  <section style="background: var(--slate); padding: 160px 0 80px; position: relative; overflow: hidden;">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 30%,rgba(187,224,36,.06),transparent 60%);"></div>
     <div class="container" style="position:relative;z-index:1;">
-      <div class="section-label animate" style="color: var(--main-bright);">About Us</div>
+      <div class="section-label section-label-light animate">About Us</div>
       <h1 class="animate animate-d1" style="color: var(--white); max-width: 650px;">
         Meet the person behind<br><em>your taxes</em>
       </h1>
@@ -62,10 +61,12 @@
         <!-- Left: Photo/info card -->
         <div class="anim">
           <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden;">
-            <div style="background: linear-gradient(135deg, var(--main-dark), #2d4a57); padding: 48px; text-align: center;">
-              <div style="width: 120px; height: 120px; border-radius: 50%; background: rgba(187,224,36,.15); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 3rem; color: var(--main-bright);">K</div>
-              <h3 style="color: var(--white); font-size: 1.6rem; margin-bottom: 4px;">Katie Klemsen</h3>
-              <p style="color: rgba(255,255,255,.5); font-size: .9rem;">Founder &amp; Lead Tax Preparer</p>
+            <div style="background: linear-gradient(135deg, var(--slate), #2d4a57); text-align: center;">
+              <img src="images/katie.avif" alt="Katie Klemsen" style="width: 100%; aspect-ratio: 1; object-fit: cover; display: block;">
+              <div style="padding: 20px;">
+                <h3 style="color: var(--white); font-size: 1.6rem; margin-bottom: 4px;">Katie Klemsen</h3>
+                <p style="color: var(--lime); font-size: .9rem; font-weight: 500;">Founder &amp; Lead Tax Preparer</p>
+              </div>
             </div>
             <div style="padding: 32px;">
               <div style="display: flex; flex-direction: column; gap: 16px;">
@@ -87,7 +88,7 @@
                   <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(35,52,62,.06); display: flex; align-items: center; justify-content: center; font-size: .9rem; flex-shrink: 0;">📧</div>
                   <div>
                     <div style="font-size: .8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .5px;">Email</div>
-                    <a href="mailto:Klemsenconsulting@gmail.com" style="font-size: .95rem; font-weight: 500; color: var(--light-accent);">Klemsenconsulting@gmail.com</a>
+                    <a href="mailto:Klemsenconsulting@gmail.com" style="font-size: .95rem; font-weight: 500; color: var(--blue);">Klemsenconsulting@gmail.com</a>
                   </div>
                 </div>
               </div>
@@ -118,19 +119,19 @@
           <!-- Values grid -->
           <div class="anim" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
             <div style="background: rgba(187,224,36,.08); border: 1px solid rgba(187,224,36,.15); border-radius: var(--radius); padding: 24px;">
-              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--main-dark);">No Judgment</h4>
+              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--slate);">No Judgment</h4>
               <p style="font-size: .9rem; margin: 0;">Whether it's a mini-mess or a mega-mess, Katie has likely seen messier. Expat messes are her wheelhouse.</p>
             </div>
             <div style="background: rgba(0,158,216,.06); border: 1px solid rgba(0,158,216,.12); border-radius: var(--radius); padding: 24px;">
-              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--main-dark);">Upfront Pricing</h4>
+              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--slate);">Upfront Pricing</h4>
               <p style="font-size: .9rem; margin: 0;">Reasonable quotes given before any work begins. Never any hidden fees or unexpected charges.</p>
             </div>
             <div style="background: rgba(0,158,216,.06); border: 1px solid rgba(0,158,216,.12); border-radius: var(--radius); padding: 24px;">
-              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--main-dark);">Thorough Filings</h4>
+              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--slate);">Thorough Filings</h4>
               <p style="font-size: .9rem; margin: 0;">Every return includes comprehensive disclosures that answer IRS questions before they arise.</p>
             </div>
             <div style="background: rgba(187,224,36,.08); border: 1px solid rgba(187,224,36,.15); border-radius: var(--radius); padding: 24px;">
-              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--main-dark);">Global Reach</h4>
+              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--slate);">Global Reach</h4>
               <p style="font-size: .9rem; margin: 0;">Clients across Korea, Japan, China, Europe, Australia, and the US continue working with Katie even after repatriation.</p>
             </div>
           </div>
@@ -144,11 +145,11 @@
     <div class="container-narrow" style="text-align: center;">
       <div class="anim">
         <div style="font-family: var(--font-display); font-size: 6rem; color: rgba(187,224,36,.25); line-height: 1;">"</div>
-        <p style="font-family: var(--font-display); font-size: clamp(1.4rem,3vw,2rem); color: var(--main-dark); line-height: 1.5; font-style: italic; max-width: 600px; margin: -20px auto 24px;">
+        <p style="font-family: var(--font-display); font-size: clamp(1.4rem,3vw,2rem); color: var(--slate); line-height: 1.5; font-style: italic; max-width: 600px; margin: -20px auto 24px;">
           I offer a great value for one simple reason: I want you to be happy.
         </p>
-        <div style="width: 40px; height: 2px; background: var(--main-bright); margin: 0 auto 16px;"></div>
-        <p style="font-weight: 600; color: var(--main-dark); font-size: .95rem; margin: 0;">Katie Klemsen</p>
+        <div style="width: 40px; height: 2px; background: var(--lime); margin: 0 auto 16px;"></div>
+        <p style="font-weight: 600; color: var(--slate); font-size: .95rem; margin: 0;">Katie Klemsen</p>
         <p style="color: var(--text-muted); font-size: .85rem; margin: 0;">Founder, Klemsen Consulting</p>
       </div>
     </div>
@@ -160,7 +161,7 @@
       <div class="cta-banner anim">
         <h2>Ready to file with confidence?</h2>
         <p>Get in touch and let Katie take the stress out of your expat taxes.</p>
-        <a href="contact.html" class="btn btn-bright" style="position:relative;z-index:1;">Contact Katie →</a>
+        <a href="contact.html" class="btn btn-lime" style="position:relative;z-index:1;">Contact Katie →</a>
       </div>
     </div>
   </section>
@@ -170,9 +171,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-            <div class="nav-logo-mark">K</div>
-            <span style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);">Klemsen Consulting</span>
+          <div style="margin-bottom:16px;">
+            <img src="images/logo-small.avif" alt="Klemsen Consulting" style="height:44px;">
           </div>
           <p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p>
         </div>
