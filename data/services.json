@@ -2,14 +2,6 @@
   "services": [
     {
       "number": 3,
-      "name": "Spousal Visa Package",
-      "price_usd": "$200–420",
-      "price_krw": "₩200,000–420,000",
-      "description": "Depending on your tax and salary history, and how you plan to go about obtaining the spousal visa, one to three years of tax history can be requested. Contact us and let us help you prepare for re-entry to America with your spouse.",
-      "note": ""
-    },
-    {
-      "number": 1,
       "name": "Expat Federal Package",
       "price_usd": "From $200",
       "price_krw": "₩200,000",
@@ -23,6 +15,14 @@
       "price_krw": "₩900,000",
       "description": "Perfect for expats 5+ years behind. The Streamlined Foreign Offshore Procedure wipes the slate clean. Includes certification, current year federal, and three back years. Sample tax narratives provided.",
       "note": "FBAR reporting may be required at additional cost"
+    },
+    {
+      "number": 1,
+      "name": "Spousal Visa Package",
+      "price_usd": "$200–420",
+      "price_krw": "₩200,000–420,000",
+      "description": "Depending on your tax and salary history, and how you plan to go about obtaining the spousal visa, one to three years of tax history can be requested. Contact us and let us help you prepare for re-entry to America with your spouse.",
+      "note": ""
     },
     {
       "number": 4,
