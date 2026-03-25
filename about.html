@@ -4,150 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | Klemsen Consulting</title>
-  <meta name="description" content="Meet Katie Klemsen — expat tax specialist with 17+ years of overseas experience helping Americans file from abroad.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="images/header-logo.png" alt="Klemsen Consulting" class="nav-logo-img"></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html" class="active">About</a></li><li><a href="services.html">Services</a></li><li><a href="korean-taxes.html">Korean Taxes</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" class="nav-cta">Contact Us</a></li></ul><button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="nav-mobile"><a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="services.html">Services</a><a href="korean-taxes.html">Korean Taxes</a><a href="faq.html">FAQ</a><a href="contact.html">Contact Us</a></div></nav>
 
-  <!-- ═══ NAV ═══ -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="images/header-logo.png" alt="Klemsen Consulting" class="nav-logo-img">
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="korean-taxes.html">Korean Taxes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-      </ul>
-      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-    <div class="nav-mobile">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="korean-taxes.html">Korean Taxes</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </nav>
-
-  <!-- ═══ HEADER ═══ -->
-  <section style="background: var(--slate); padding: 140px 0 56px;">
+  <section style="background:var(--slate);padding:140px 0 56px;">
     <div class="container">
       <div class="section-label section-label-light animate">About Us</div>
-      <h1 class="animate animate-d1" style="color: var(--white);">Meet Katie Klemsen</h1>
-      <p class="animate animate-d2" style="font-family: var(--font-display); font-style: italic; color: var(--lime); opacity: .85;  color: rgba(255,255,255,.55); margin-top: 12px; font-size: 1.1rem;">"I offer a great value for one simple reason: I want you to be happy."</p>
+      <h1 class="animate animate-d1" style="color:var(--white);">Meet Katie Klemsen</h1>
+      <p id="header-quote" class="animate animate-d2" style="font-family:var(--font-display);font-style:italic;color:var(--lime);opacity:.85;margin-top:12px;font-size:1.3rem;"></p>
     </div>
   </section>
 
-  <!-- ═══ BIO — photo + text, clean layout ═══ -->
   <section class="section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 380px 1fr; gap: 80px; align-items: start;" class="about-grid">
-
-        <!-- Photo column -->
-        <div class="anim" style="position: sticky; top: 120px;">
-          <img src="images/katie.avif" alt="Katie Klemsen" style="width: 100%; display: block; margin-bottom: 28px;">
-          <h3 style="font-size: 1.5rem; margin-bottom: 2px;">Katie Klemsen</h3>
-          <p style="color: var(--lime-dark); font-weight: 500; font-size: .9rem; margin-bottom: 20px;">Founder &amp; Lead Tax Preparer</p>
-          <div style="width: 40px; height: 3px; background: var(--lime); margin-bottom: 20px;"></div>
-          <p style="font-size: .9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 6px;">Yongin, South Korea</p>
-          <p style="font-size: .9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 6px;">17+ years living overseas</p>
-          <p style="font-size: .9rem; line-height: 1.7;"><a href="mailto:Klemsenconsulting@gmail.com" style="color: var(--blue);">Klemsenconsulting@gmail.com</a></p>
+      <div style="display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:start;" class="about-grid">
+        <div class="anim" style="position:sticky;top:120px;">
+          <img src="images/katie.avif" alt="Katie Klemsen" style="width:100%;display:block;margin-bottom:28px;">
+          <h3 id="photo-name" style="font-size:1.5rem;margin-bottom:2px;"></h3>
+          <p id="photo-title" style="color:var(--lime-dark);font-weight:500;font-size:.9rem;margin-bottom:20px;"></p>
+          <div style="width:40px;height:3px;background:var(--lime);margin-bottom:20px;"></div>
+          <p id="photo-location" style="font-size:.9rem;color:var(--text-muted);line-height:1.7;margin-bottom:6px;"></p>
+          <p id="photo-experience" style="font-size:.9rem;color:var(--text-muted);line-height:1.7;margin-bottom:6px;"></p>
+          <p style="font-size:.9rem;line-height:1.7;"><a id="photo-email" href="#" style="color:var(--blue);"></a></p>
         </div>
-
-        <!-- Bio text -->
         <div>
-          <h2 class="anim" style="margin-bottom: 28px;">A specialty built on <em>real experience</em></h2>
-
-          <p class="anim" style="font-size: 1.05rem; margin-bottom: 20px;">
-            Tax Uncomplicated, the American headquarters, and Klemsen Consulting, the local Korean branch office, are here to help.
-          </p>
-
-          <p class="anim" style="font-size: 1.05rem; margin-bottom: 20px;">
-            I offer a different kind of tax preparation service and financial management advice. You will never feel rushed or pressured.
-          </p>
-
-          <p class="anim" style="font-size: 1.05rem; margin-bottom: 20px;">
-            A number of tax law changes, including the Affordable Care Act provisions, can be complicated. Whether you're a first time filer, live abroad, or you have an even more complex tax situation, you need a tax preparer who is familiar with your situation. Having lived overseas for more than 17 years, I have developed a specialty in preparing tax returns for expats, including filing Foreign Bank Account Reports (FBARs) and making sure you meet the Foreign Account Tax Compliance Act (FATCA) filing requirements.
-          </p>
-
-          <p class="anim" style="font-size: 1.05rem; margin-bottom: 20px;">
-            I always give reasonable, upfront quotes so there will never be any surprises.
-          </p>
-
-          <p class="anim" style="font-size: 1.05rem; margin-bottom: 20px;">
-            I can help you regardless of how complicated or unique your situation or how long its been since you've filed a tax return.
-          </p>
-
-          <p class="anim" style="font-size: 1.05rem; font-style: italic; color: var(--slate);">
-            I offer a great value for one simple reason: I want you to be happy.
-          </p>
+          <h2 id="bio-heading" class="anim" style="margin-bottom:28px;"></h2>
+          <div id="bio-paragraphs"></div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="section-sm"><div class="container"><div class="cta-banner anim"><h2>Ready to file with confidence?</h2><p>Get in touch and let Katie take the stress out of your expat taxes.</p><a href="contact.html" class="btn btn-dark" style="position:relative;z-index:1;">Contact Katie →</a></div></div></section>
 
-  <!-- ═══ CTA ═══ -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="cta-banner anim">
-        <h2>Ready to file with confidence?</h2>
-        <p>Get in touch and let Katie take the stress out of your expat taxes.</p>
-        <a href="contact.html" class="btn btn-dark" style="position: relative; z-index: 1;">Contact Katie →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div style="margin-bottom: 16px;">
-            <img src="images/logo-small.avif" alt="Klemsen Consulting" style="height: 96px;">
-          </div>
-          <p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="korean-taxes.html">Korean Taxes</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Get in Touch</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:Klemsenconsulting@gmail.com">Klemsenconsulting@gmail.com</a></li>
-            <li><a href="tel:010-5132-7226">010-5132-7226</a></li>
-            <li>Yongin, Gyeonggi, South Korea</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Klemsen Consulting. All rights reserved.</span>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div style="margin-bottom:16px;"><img src="images/logo-small.avif" alt="Klemsen Consulting" style="height:96px;"></div><p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p></div><div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li></ul></div><div><h4>Resources</h4><ul class="footer-links"><li><a href="korean-taxes.html">Korean Taxes</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></div><div><h4>Get in Touch</h4><ul class="footer-links"><li><a href="mailto:Klemsenconsulting@gmail.com">Klemsenconsulting@gmail.com</a></li><li><a href="tel:010-5132-7226">010-5132-7226</a></li><li>Yongin, Gyeonggi, South Korea</li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 Klemsen Consulting. All rights reserved.</span><div class="footer-social"><a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" aria-label="Facebook">f</a></div></div></div></footer>
 
   <script src="main.js"></script>
+  <script>
+  fetch('data/about.json').then(function(r){return r.json()}).then(function(d){
+    document.getElementById('header-quote').textContent=d.header_quote;
+    document.getElementById('photo-name').textContent=d.photo_info.name;
+    document.getElementById('photo-title').textContent=d.photo_info.title;
+    document.getElementById('photo-location').textContent=d.photo_info.location;
+    document.getElementById('photo-experience').textContent=d.photo_info.experience;
+    document.getElementById('photo-email').textContent=d.photo_info.email;
+    document.getElementById('photo-email').href='mailto:'+d.photo_info.email;
+    document.getElementById('bio-heading').innerHTML=d.bio_heading.replace(/(real experience|real\s)/,'<em>$1</em>');
+    var container=document.getElementById('bio-paragraphs');
+    d.bio_paragraphs.forEach(function(text,i){
+      var p=document.createElement('p');
+      p.className='anim';
+      p.style.cssText='font-size:1.05rem;margin-bottom:20px;';
+      if(i===d.bio_paragraphs.length-1){p.style.fontStyle='italic';p.style.color='var(--slate)';}
+      p.textContent=text;
+      container.appendChild(p);
+    });
+  });
+  </script>
 </body>
 </html>

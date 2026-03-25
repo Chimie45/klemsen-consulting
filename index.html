@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Klemsen Consulting | US Expat Tax Experts in South Korea</title>
-  <meta name="description" content="Expert US expat tax preparation from South Korea. Federal & state filing, back taxes, FBARs — made painless by Katie Klemsen.">
+  <meta name="description" content="Expert US expat tax preparation from South Korea. Federal & state filing, back taxes, FBARs — made painless.">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-
-  <!-- ═══ NAV ═══ -->
   <nav class="nav nav-on-lime">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="images/header-logo.png" alt="Klemsen Consulting" class="nav-logo-img">
-      </a>
+      <a href="index.html" class="nav-logo"><img src="images/header-logo.png" alt="Klemsen Consulting" class="nav-logo-img"></a>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
@@ -23,180 +18,93 @@
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
       </ul>
-      <button class="nav-hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
     <div class="nav-mobile">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="korean-taxes.html">Korean Taxes</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="index.html" class="active">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="korean-taxes.html">Korean Taxes</a><a href="faq.html">FAQ</a><a href="contact.html">Contact Us</a>
     </div>
   </nav>
 
-  <!-- ═══ HERO ═══ -->
   <section class="hero">
     <div class="hero-bg-pattern"></div>
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <p class="animate" style="font-size: .8rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); opacity: .55; margin-bottom: 20px;">— The 2025 tax season is now open —</p>
-          <h1 class="animate animate-d1">Your taxes.<br><em>Uncomplicated.</em></h1>
-          <p class="hero-sub animate animate-d2">We know expat taxes! The tax professionals at Tax Uncomplicated and Klemsen Consulting are dedicated to assisting you in filing your US federal and state taxes. From teachers to business men and women, business owners and stay at home spouses, we are happy to help.</p>
-          <div class="animate animate-d3" style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <p id="tax-note" class="animate" style="font-size:.8rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);opacity:.55;margin-bottom:20px;"></p>
+          <h1 class="animate animate-d1"><span id="hero-line1"></span><br><em id="hero-line2"></em></h1>
+          <p id="hero-desc" class="hero-sub animate animate-d2"></p>
+          <div class="animate animate-d3" style="display:flex;gap:16px;flex-wrap:wrap;">
             <a href="contact.html" class="btn btn-dark">Start Filing Today →</a>
             <a href="services.html" class="btn btn-outline-dark">View Services</a>
           </div>
         </div>
         <div class="hero-visual animate animate-d3">
           <div class="hero-card">
-            <p style="font-size: .7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--lime); margin-bottom: 20px;">What we handle</p>
-            <h3>Complete Expat Tax Filing</h3>
-            <ul class="hero-card-list">
-              <li><span class="check">✓</span> Federal &amp; State Tax Returns</li>
-              <li><span class="check">✓</span> FBAR &amp; FATCA Compliance</li>
-              <li><span class="check">✓</span> Back Taxes &amp; Catch-up Filing</li>
-              <li><span class="check">✓</span> Streamlined Offshore Procedure</li>
-              <li><span class="check">✓</span> Stock &amp; Investment Reporting</li>
-              <li><span class="check">✓</span> Spousal Visa Tax Packages</li>
-            </ul>
+            <p style="font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--lime);margin-bottom:20px;">What we handle</p>
+            <h3 id="hero-box-title"></h3>
+            <ul id="hero-box-list" class="hero-card-list"></ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ WHY US ═══ -->
   <section class="section">
     <div class="container">
-      <div style="text-align: center; max-width: 600px; margin: 0 auto 64px;">
-        <div class="section-label anim" style="justify-content: center;">Why Klemsen Consulting</div>
+      <div style="text-align:center;max-width:600px;margin:0 auto 64px;">
+        <div class="section-label anim" style="justify-content:center;">Why Klemsen Consulting</div>
         <h2 class="anim">We know <em>expat</em> taxes</h2>
-        <p class="anim" style="margin-top: 12px;">From teachers to business owners, first-time filers to those years behind — we've handled it all with zero client penalties.</p>
       </div>
-      <div class="anim" style="display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr; gap: 0; align-items: start; max-width: 960px; margin: 0 auto;" id="why-grid">
-        <div style="padding: 0 40px; text-align: center;">
-          <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--slate); line-height: 1; margin-bottom: 16px;">Global</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--slate);">Expertise</h3>
-          <p style="font-size: .9rem; line-height: 1.7;">Clients across Korea, Japan, China, Europe, and beyond. We work remotely with expats everywhere.</p>
-        </div>
-        <div style="width: 1px; height: 100%; background: var(--border);"></div>
-        <div style="padding: 0 40px; text-align: center;">
-          <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--slate); line-height: 1; margin-bottom: 16px;">Zero</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--slate);">Penalties</h3>
-          <p style="font-size: .9rem; line-height: 1.7;">No client has ever been fined or penalized for late filing. Our thorough disclosures protect you.</p>
-        </div>
-        <div style="width: 1px; height: 100%; background: var(--border);"></div>
-        <div style="padding: 0 40px; text-align: center;">
-          <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--slate); line-height: 1; margin-bottom: 16px;">Clear</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--slate);">Process</h3>
-          <p style="font-size: .9rem; line-height: 1.7;">Simple checklists, upfront quotes, and fast response times. No surprises, no pressure.</p>
-        </div>
-      </div>
+      <div id="key-points" class="anim" style="display:grid;grid-template-columns:1fr 1px 1fr 1px 1fr;gap:0;align-items:start;max-width:960px;margin:0 auto;"></div>
     </div>
   </section>
-  <style>
-    @media (max-width: 768px) {
-      #why-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-      #why-grid > div[style*="width: 1px"] { width: 60px !important; height: 1px !important; margin: 0 auto; }
-    }
-  </style>
+  <style>@media(max-width:768px){#key-points{grid-template-columns:1fr!important;gap:40px!important;}#key-points>.kp-divider{width:60px!important;height:1px!important;margin:0 auto;}}</style>
 
-  <!-- ═══ ABOUT PREVIEW ═══ -->
-  <section class="section" style="background: var(--bg-alt);">
+  <section class="section" style="background:var(--bg-alt);">
     <div class="container">
-      <div class="about-grid" style="align-items: center;">
-        <div class="anim">
-          <img src="images/katie.avif" alt="Katie Klemsen" style="width: 100%; display: block; aspect-ratio: 1; object-fit: cover;">
-        </div>
+      <div class="about-grid" style="align-items:center;">
+        <div class="anim"><img src="images/katie.avif" alt="Katie Klemsen" style="width:100%;display:block;aspect-ratio:1;object-fit:cover;"></div>
         <div>
           <div class="section-label anim">About Us</div>
-          <h2 class="anim">A specialty built on <em>real experience</em></h2>
-          <p class="anim" style="margin-top: 16px;">Having lived overseas for more than 17 years, Katie has developed deep expertise in preparing tax returns for US expats — including FBARs, FATCA compliance, and navigating the unique complexities of living and earning abroad.</p>
-          <p class="anim" style="margin-top: 12px; margin-bottom: 32px;">You'll never feel rushed or pressured. Just honest, upfront quotes and a genuine commitment to making you happy.</p>
+          <h2 id="bio-heading" class="anim"></h2>
+          <p id="bio-p1" class="anim" style="margin-top:16px;"></p>
+          <p id="bio-p2" class="anim" style="margin-top:12px;margin-bottom:32px;"></p>
           <a href="about.html" class="btn btn-lime anim">Read Our Story →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ SERVICES ═══ -->
   <section class="section">
     <div class="container">
-      <div style="text-align: center; max-width: 600px; margin: 0 auto 56px;">
-        <div class="section-label anim" style="justify-content: center;">Our Services</div>
+      <div style="text-align:center;max-width:600px;margin:0 auto 56px;">
+        <div class="section-label anim" style="justify-content:center;">Our Services</div>
         <h2 class="anim">Everything you need to file with <em>confidence</em></h2>
       </div>
-
-      <div class="two-col anim" style="max-width: 900px; margin: 0 auto;">
-        <!-- Expat Federal -->
-        <div style="background: var(--lime); padding: 44px;">
-          <p style="font-size: .7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 16px; opacity: .6;">Most Popular</p>
-          <h3 style="color: var(--slate); font-size: 1.5rem; margin-bottom: 6px;">Expat Federal Package</h3>
-          <div style="color: var(--slate); font-weight: 700; font-size: 1.3rem; margin-bottom: 16px; opacity: .8;">From $200 <span style="font-size: .8rem; font-weight: 400; opacity: .6;">/ ₩200,000</span></div>
-          <p style="color: var(--text-on-lime); opacity: .7; font-size: .9rem; line-height: 1.7; margin-bottom: 24px;">Standard federal filing for salaried expats. Includes Form 1040, Schedule A &amp; B, Form 2555/1116, healthcare paperwork, and a comprehensive IRS disclosure.</p>
-          <a href="contact.html" class="btn btn-dark">Get Started →</a>
-        </div>
-
-        <!-- Streamlined -->
-        <div style="background: var(--slate); padding: 44px;">
-          <p style="font-size: .7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--lime); margin-bottom: 16px;">Catch-Up Filing</p>
-          <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 6px;">Streamlined Package</h3>
-          <div style="color: var(--lime); font-weight: 700; font-size: 1.3rem; margin-bottom: 16px;">$900 <span style="font-size: .8rem; color: rgba(255,255,255,.4); font-weight: 400;">/ ₩900,000</span></div>
-          <p style="color: rgba(255,255,255,.6); font-size: .9rem; line-height: 1.7; margin-bottom: 24px;">5+ years behind? The Streamlined Foreign Offshore Procedure wipes the slate clean. Includes current year + three back years of federal taxes.</p>
-          <a href="contact.html" class="btn btn-lime">Inquire Now →</a>
-        </div>
-      </div>
-
-      <div class="anim" style="text-align: center; max-width: 500px; margin: 48px auto 0;">
-        <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">We also offer back tax filing, spousal visa packages, state taxes, FBAR reporting, stock sales reporting, and more — 9 packages in total to cover every situation.</p>
+      <div id="packages" class="two-col anim" style="max-width:900px;margin:0 auto;"></div>
+      <div class="anim" style="text-align:center;max-width:500px;margin:48px auto 0;">
+        <p id="more-services" style="font-size:1rem;color:var(--text-secondary);line-height:1.7;margin-bottom:20px;"></p>
         <a href="services.html" class="btn btn-outline-dark">View All Services →</a>
       </div>
     </div>
   </section>
 
-  <!-- ═══ TESTIMONIALS ═══ -->
-  <section class="section" style="background: var(--bg-alt);">
+  <section class="section" style="background:var(--bg-alt);">
     <div class="container">
-      <div style="text-align: center; max-width: 500px; margin: 0 auto 48px;">
-        <div class="section-label anim" style="justify-content: center;">Testimonials</div>
+      <div style="text-align:center;max-width:500px;margin:0 auto 48px;">
+        <div class="section-label anim" style="justify-content:center;">Testimonials</div>
         <h2 class="anim">Trusted by expats <em>worldwide</em></h2>
       </div>
-      <div class="two-col">
-        <div class="testimonial-card anim">
-          <p>Katie and Allen are professional and thorough. I came to Korea not understanding the extent of my filing duties and neglected my taxes for years. The process of completing my back taxes was made painless with Klemsen Consulting. I've stayed current for 3 years and continue to be a loyal customer.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar"><img src="images/testimonial-dennis.avif" alt="Dennis"></div>
-            <div>
-              <div class="testimonial-name">Dennis John Battistella, Jr.</div>
-              <div class="testimonial-role">Long-term Expat Client</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card anim">
-          <p>Katie's patient service turned the process of years of overseas back tax filing from an overwhelming mission impossible, to a simple and manageable task. Everything I needed was outlined in a clear checklist. Response time was incredibly fast, and all questions were treated kindly.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar"><img src="images/testimonial-jemma.avif" alt="Jemma"></div>
-            <div>
-              <div class="testimonial-name">Jemma Abbate</div>
-              <div class="testimonial-role">Back Tax Filing Client</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="testimonials" class="two-col"></div>
     </div>
   </section>
 
-  <!-- ═══ CTA ═══ -->
   <section class="section-sm">
     <div class="container">
       <div class="cta-banner anim">
         <h2>Ready to get started?</h2>
         <p>Whether you need to file this year's return or catch up on years of back taxes, we're here to help — no judgment, no pressure.</p>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1;">
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;">
           <a href="contact.html" class="btn btn-dark">Contact Us Today →</a>
           <a href="faq.html" class="btn btn-outline-dark">Read the FAQ</a>
         </div>
@@ -204,118 +112,90 @@
     </div>
   </section>
 
-  <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <div style="margin-bottom: 16px;">
-            <img src="images/logo-small.avif" alt="Klemsen Consulting" style="height: 96px;">
-          </div>
-          <p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="korean-taxes.html">Korean Taxes</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Get in Touch</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:Klemsenconsulting@gmail.com">Klemsenconsulting@gmail.com</a></li>
-            <li><a href="tel:010-5132-7226">010-5132-7226</a></li>
-            <li>Yongin, Gyeonggi, South Korea</li>
-          </ul>
-        </div>
+        <div class="footer-brand"><div style="margin-bottom:16px;"><img src="images/logo-small.avif" alt="Klemsen Consulting" style="height:96px;"></div><p>Expert US expat tax preparation based in Yongin, South Korea. Your taxes are our business.</p></div>
+        <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li></ul></div>
+        <div><h4>Resources</h4><ul class="footer-links"><li><a href="korean-taxes.html">Korean Taxes</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+        <div><h4>Get in Touch</h4><ul class="footer-links"><li><a href="mailto:Klemsenconsulting@gmail.com">Klemsenconsulting@gmail.com</a></li><li><a href="tel:010-5132-7226">010-5132-7226</a></li><li>Yongin, Gyeonggi, South Korea</li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Klemsen Consulting. All rights reserved.</span>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-        </div>
-      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Klemsen Consulting. All rights reserved.</span><div class="footer-social"><a href="https://www.facebook.com/taxuncomplicatedklemsenconsulting2016/" target="_blank" rel="noopener" aria-label="Facebook">f</a></div></div>
     </div>
   </footer>
 
-  <!-- ═══ TAX SEASON LIGHTBOX ═══ -->
-  <div id="lightbox-overlay" style="display:none; position:fixed; inset:0; background:rgba(24,25,25,.6); z-index:9999; justify-content:center; align-items:center; backdrop-filter:blur(4px);">
-    <div id="lightbox" style="background:var(--white); max-width:520px; width:90%; padding:48px; position:relative;">
-      <button id="lightbox-close" style="position:absolute; top:16px; right:16px; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-muted); line-height:1;">×</button>
-      <div style="margin-bottom:24px;">
-        <h2 id="lb-heading" style="font-family:var(--font-display); font-size:2rem; color:var(--slate); margin-bottom:8px;"></h2>
-        <div style="width:40px; height:3px; background:var(--lime);"></div>
-      </div>
-      <p id="lb-message" style="font-size:1rem; color:var(--text-secondary); line-height:1.7; margin-bottom:8px;"></p>
-      <p id="lb-cta" style="font-size:1rem; color:var(--text-primary); font-weight:600; margin-bottom:24px;"></p>
-      <a id="lb-button" href="#" target="_blank" rel="noopener" class="btn btn-lime" style="width:100%; justify-content:center; margin-bottom:16px;"></a>
-      <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:24px;">
-        Email for more information:<br>
-        <a id="lb-email" href="#" style="color:var(--blue); font-weight:600;"></a>
-      </p>
-      <div style="border-top:1px solid var(--border); padding-top:16px; display:flex; justify-content:space-between; align-items:center;">
-        <button id="lightbox-dismiss" style="background:none; border:none; font-size:.85rem; color:var(--text-muted); cursor:pointer; text-decoration:underline;">Don't show again</button>
-        <button id="lightbox-close2" style="background:none; border:none; font-size:.85rem; color:var(--text-secondary); cursor:pointer; font-weight:500;">Close</button>
+  <div id="lightbox-overlay" style="display:none;position:fixed;inset:0;background:rgba(24,25,25,.6);z-index:9999;justify-content:center;align-items:center;backdrop-filter:blur(4px);">
+    <div style="background:var(--white);max-width:520px;width:90%;padding:48px;position:relative;">
+      <button id="lightbox-close" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-muted);line-height:1;">×</button>
+      <div style="margin-bottom:24px;"><h2 id="lb-heading" style="font-family:var(--font-display);font-size:2rem;color:var(--slate);margin-bottom:8px;"></h2><div style="width:40px;height:3px;background:var(--lime);"></div></div>
+      <p id="lb-message" style="font-size:1rem;color:var(--text-secondary);line-height:1.7;margin-bottom:8px;"></p>
+      <p id="lb-cta" style="font-size:1rem;color:var(--text-primary);font-weight:600;margin-bottom:24px;"></p>
+      <a id="lb-button" href="#" target="_blank" rel="noopener" class="btn btn-lime" style="width:100%;justify-content:center;margin-bottom:16px;"></a>
+      <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:24px;">Email for more information:<br><a id="lb-email" href="#" style="color:var(--blue);font-weight:600;"></a></p>
+      <div style="border-top:1px solid var(--border);padding-top:16px;display:flex;justify-content:space-between;align-items:center;">
+        <button id="lightbox-dismiss" style="background:none;border:none;font-size:.85rem;color:var(--text-muted);cursor:pointer;text-decoration:underline;">Don't show again</button>
+        <button id="lightbox-close2" style="background:none;border:none;font-size:.85rem;color:var(--text-secondary);cursor:pointer;font-weight:500;">Close</button>
       </div>
     </div>
   </div>
 
   <script src="main.js"></script>
   <script>
-  (function() {
-    var overlay = document.getElementById('lightbox-overlay');
-    var dismissed = false;
-    try { dismissed = window.localStorage.getItem('klemsen_lightbox_dismissed') === '1'; } catch(e) {}
-
-    function closeLB() { overlay.style.display = 'none'; }
-    function dismissLB() {
-      try { window.localStorage.setItem('klemsen_lightbox_dismissed', '1'); } catch(e) {}
-      closeLB();
+  fetch('data/homepage.json').then(function(r){return r.json()}).then(function(d){
+    // Hero
+    document.getElementById('tax-note').textContent=d.tax_season_note;
+    document.getElementById('hero-line1').textContent=d.hero_line1;
+    document.getElementById('hero-line2').textContent=d.hero_line2;
+    document.getElementById('hero-desc').textContent=d.hero_description;
+    document.getElementById('hero-box-title').textContent=d.hero_box_title;
+    var list=document.getElementById('hero-box-list');
+    d.hero_box_items.forEach(function(item){
+      var li=document.createElement('li');
+      li.innerHTML='<span class="check">✓</span> '+item;
+      list.appendChild(li);
+    });
+    // Key points
+    var kp=document.getElementById('key-points');
+    d.key_points.forEach(function(p,i){
+      if(i>0) kp.innerHTML+='<div class="kp-divider" style="width:1px;height:100%;background:var(--border);"></div>';
+      kp.innerHTML+='<div style="padding:0 40px;text-align:center;"><div style="font-family:var(--font-display);font-size:3.5rem;color:var(--slate);line-height:1;margin-bottom:16px;">'+p.big_word+'</div><h3 style="font-size:1.1rem;margin-bottom:10px;color:var(--slate);">'+p.subtitle+'</h3><p style="font-size:.9rem;line-height:1.7;">'+p.description+'</p></div>';
+    });
+    // Bio
+    document.getElementById('bio-heading').innerHTML='A specialty built on <em>'+d.bio_section.heading.replace('A specialty built on ','')+'</em>';
+    document.getElementById('bio-p1').textContent=d.bio_section.paragraph1;
+    document.getElementById('bio-p2').textContent=d.bio_section.paragraph2;
+    // Packages
+    var pkg=document.getElementById('packages');
+    var p1=d.package1, p2=d.package2;
+    pkg.innerHTML='<div style="background:var(--lime);padding:44px;"><p style="font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--slate);margin-bottom:16px;opacity:.6;">'+p1.label+'</p><h3 style="color:var(--slate);font-size:1.5rem;margin-bottom:6px;">'+p1.name+'</h3><div style="color:var(--slate);font-weight:700;font-size:1.3rem;margin-bottom:16px;opacity:.8;">'+p1.price_usd+' <span style="font-size:.8rem;font-weight:400;opacity:.6;">/ '+p1.price_krw+'</span></div><p style="color:var(--text-on-lime);opacity:.7;font-size:.9rem;line-height:1.7;margin-bottom:24px;">'+p1.description+'</p><a href="contact.html" class="btn btn-dark">Get Started →</a></div><div style="background:var(--slate);padding:44px;"><p style="font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--lime);margin-bottom:16px;">'+p2.label+'</p><h3 style="color:var(--white);font-size:1.5rem;margin-bottom:6px;">'+p2.name+'</h3><div style="color:var(--lime);font-weight:700;font-size:1.3rem;margin-bottom:16px;">'+p2.price_usd+' <span style="font-size:.8rem;color:rgba(255,255,255,.4);font-weight:400;">/ '+p2.price_krw+'</span></div><p style="color:rgba(255,255,255,.6);font-size:.9rem;line-height:1.7;margin-bottom:24px;">'+p2.description+'</p><a href="contact.html" class="btn btn-lime">Inquire Now →</a></div>';
+    document.getElementById('more-services').textContent=d.more_services_text;
+    // Testimonials
+    var tc=document.getElementById('testimonials');
+    d.testimonials.forEach(function(t){
+      tc.innerHTML+='<div class="testimonial-card anim"><p>'+t.quote+'</p><div class="testimonial-author"><div class="testimonial-avatar"><img src="images/'+t.photo+'" alt="'+t.name+'"></div><div><div class="testimonial-name">'+t.name+'</div><div class="testimonial-role">'+t.role+'</div></div></div></div>';
+    });
+    // Lightbox
+    var overlay=document.getElementById('lightbox-overlay');
+    var dismissed=false;
+    try{dismissed=window.localStorage.getItem('klemsen_lightbox_dismissed')==='1';}catch(e){}
+    if(!dismissed&&d.lightbox.enabled){
+      var lb=d.lightbox;
+      document.getElementById('lb-heading').textContent=lb.heading;
+      document.getElementById('lb-message').textContent=lb.message;
+      document.getElementById('lb-cta').textContent=lb.cta_text;
+      document.getElementById('lb-button').textContent=lb.button_text;
+      document.getElementById('lb-button').href=lb.form_url;
+      document.getElementById('lb-email').textContent=lb.email;
+      document.getElementById('lb-email').href='mailto:'+lb.email;
+      setTimeout(function(){overlay.style.display='flex';},800);
     }
-    document.getElementById('lightbox-close').addEventListener('click', closeLB);
-    document.getElementById('lightbox-close2').addEventListener('click', closeLB);
-    document.getElementById('lightbox-dismiss').addEventListener('click', dismissLB);
-    overlay.addEventListener('click', function(e) { if (e.target === overlay) closeLB(); });
-
-    if (!dismissed) {
-      fetch('data/homepage.json')
-        .then(function(r) { return r.json(); })
-        .then(function(page) {
-          var data = page.lightbox;
-          if (!data.enabled) return;
-          document.getElementById('lb-heading').textContent = data.heading;
-          document.getElementById('lb-message').textContent = data.message;
-          document.getElementById('lb-cta').textContent = data.cta_text;
-          document.getElementById('lb-button').textContent = data.button_text;
-          document.getElementById('lb-button').href = data.form_url;
-          document.getElementById('lb-email').textContent = data.email;
-          document.getElementById('lb-email').href = 'mailto:' + data.email;
-          setTimeout(function() { overlay.style.display = 'flex'; }, 800);
-        })
-        .catch(function() {});
-    }
-  })();
-  </script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) {
-          window.netlifyIdentity.on("login", function() {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
+    function closeLB(){overlay.style.display='none';}
+    function dismissLB(){try{window.localStorage.setItem('klemsen_lightbox_dismissed','1');}catch(e){}closeLB();}
+    document.getElementById('lightbox-close').addEventListener('click',closeLB);
+    document.getElementById('lightbox-close2').addEventListener('click',closeLB);
+    document.getElementById('lightbox-dismiss').addEventListener('click',dismissLB);
+    overlay.addEventListener('click',function(e){if(e.target===overlay)closeLB();});
+  });
   </script>
 </body>
 </html>
