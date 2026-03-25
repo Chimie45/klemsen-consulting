@@ -1,0 +1,74 @@
+backend:
+  name: github
+  repo: Chimie45/klemsen-consulting
+  branch: main
+  base_url: https://klemsen-consulting.pages.dev
+  auth_endpoint: /api/auth
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Content"
+    files:
+      - name: "lightbox"
+        label: "Homepage Popup"
+        file: "data/lightbox.json"
+        fields:
+          - { label: "Show Popup", name: "enabled", widget: "boolean", default: true, hint: "Turn the popup on or off" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Message", name: "message", widget: "text" }
+          - { label: "Bold Text (below message)", name: "cta_text", widget: "string" }
+          - { label: "Google Form URL", name: "form_url", widget: "string" }
+          - { label: "Button Label", name: "button_text", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+
+      - name: "services"
+        label: "Service Prices"
+        file: "data/services.json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Service Number", name: "number", widget: "number" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Price (USD)", name: "price_usd", widget: "string" }
+              - { label: "Price (KRW)", name: "price_krw", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Note (optional)", name: "note", widget: "string", required: false }
+
+      - name: "contact"
+        label: "Contact Info"
+        file: "data/contact.json"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Phone Note", name: "phone_note", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Location Note", name: "location_note", widget: "string" }
+          - { label: "Payment Methods", name: "payment", widget: "string" }
+          - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+
+      - name: "faq"
+        label: "FAQ"
+        file: "data/faq.json"
+        fields:
+          - label: "Questions"
+            name: "questions"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+      - name: "korean_taxes"
+        label: "Korean Taxes Partner"
+        file: "data/korean-taxes.json"
+        fields:
+          - { label: "Partner Name", name: "name", widget: "string" }
+          - { label: "Partner English Name", name: "english_name", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Office Address", name: "office", widget: "string" }
+          - { label: "Referral Note", name: "referral_note", widget: "text" }

@@ -1,0 +1,76 @@
+{
+  "services": [
+    {
+      "number": 1,
+      "name": "Expat Federal Package",
+      "price_usd": "From $200",
+      "price_krw": "₩200,000",
+      "description": "The standard expat package suits most clients with salary income. Includes Form 1040, Schedule A & B, Form 2555/1116, Form 8965, healthcare paperwork, Schedule 1, and a comprehensive IRS disclosure.",
+      "note": "FBAR fees are $25 / ₩25,000 per account (not included)"
+    },
+    {
+      "number": 2,
+      "name": "Streamlined Package",
+      "price_usd": "$900",
+      "price_krw": "₩900,000",
+      "description": "Perfect for expats 5+ years behind. The Streamlined Foreign Offshore Procedure wipes the slate clean. Includes certification, current year federal, and three back years. Sample tax narratives provided.",
+      "note": "FBAR reporting may be required at additional cost"
+    },
+    {
+      "number": 3,
+      "name": "Spousal Visa Package",
+      "price_usd": "$200–420",
+      "price_krw": "₩200,000–420,000",
+      "description": "Depending on your tax and salary history, and how you plan to go about obtaining the spousal visa, one to three years of tax history can be requested. Contact us and let us help you prepare for re-entry to America with your spouse.",
+      "note": ""
+    },
+    {
+      "number": 4,
+      "name": "Back Taxes",
+      "price_usd": "From $200",
+      "price_krw": "₩200,000",
+      "description": "If you have failed to file taxes in the past, we can help and back file for you. We include a detailed explanation of why and how you are filing late, and do all we can to avoid penalty. The first year is full price, with discounts for each additional year filed together.",
+      "note": "No client we have served has been fined or penalized for late filing."
+    },
+    {
+      "number": 5,
+      "name": "State Taxes",
+      "price_usd": "Starting at $60",
+      "price_krw": "₩60,000",
+      "description": "In most cases, expats are not required to file state taxes, but sometimes they must. We'll determine your state obligations and handle it. If you have questions about state tax, contact us!",
+      "note": ""
+    },
+    {
+      "number": 6,
+      "name": "FBAR Reporting",
+      "price_usd": "$25",
+      "price_krw": "₩25,000 each account per year",
+      "description": "Required if at any time you have had $10,000+ in foreign financial accounts. It doesn't matter if your balance was only briefly over $10,000 or the money wasn't all yours — an FBAR still needs to be filed. Back FBARs can also be filed.",
+      "note": ""
+    },
+    {
+      "number": 7,
+      "name": "Schedule C, D, or E",
+      "price_usd": "$60",
+      "price_krw": "₩60,000",
+      "description": "Business income (Schedule C), capital gains from sales or trades (Schedule D), or rental property income (Schedule E — up to 3 properties per schedule).",
+      "note": ""
+    },
+    {
+      "number": 8,
+      "name": "Stock Sales, Mutual Funds & Other Securities",
+      "price_usd": "$60",
+      "price_krw": "₩60,000 per Form 8949",
+      "description": "Up to 14 short-term and 14 long-term sales per form. No extra charge for the accompanying Schedule D.",
+      "note": ""
+    },
+    {
+      "number": 9,
+      "name": "Extension for New Expats",
+      "price_usd": "$60",
+      "price_krw": "₩60,000",
+      "description": "Recently moved abroad? You'll almost certainly need a special extension to avoid paying US federal taxes on your overseas salary. We'll explain all the benefits and build a comprehensive tax plan. Can be bundled with 1–2 years of filings to save money.",
+      "note": "This is the special extension you need if you moved to Korea mid-tax-year."
+    }
+  ]
+}

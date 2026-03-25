@@ -6,6 +6,7 @@
   <title>Klemsen Consulting | US Expat Tax Experts in South Korea</title>
   <meta name="description" content="Expert US expat tax preparation from South Korea. Federal & state filing, back taxes, FBARs — made painless by Katie Klemsen.">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -252,15 +253,15 @@
     <div id="lightbox" style="background:var(--white); max-width:520px; width:90%; padding:48px; position:relative;">
       <button id="lightbox-close" style="position:absolute; top:16px; right:16px; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-muted); line-height:1;">×</button>
       <div style="margin-bottom:24px;">
-        <h2 style="font-family:var(--font-display); font-size:2rem; color:var(--slate); margin-bottom:8px;">The 2025 US Tax Season</h2>
+        <h2 id="lb-heading" style="font-family:var(--font-display); font-size:2rem; color:var(--slate); margin-bottom:8px;"></h2>
         <div style="width:40px; height:3px; background:var(--lime);"></div>
       </div>
-      <p style="font-size:1rem; color:var(--text-secondary); line-height:1.7; margin-bottom:8px;">The new tax season opens in late January 2026!</p>
-      <p style="font-size:1rem; color:var(--text-primary); font-weight:600; margin-bottom:24px;">Get started today!</p>
-      <a href="https://forms.gle/p6eoURRnNBSUs1687" target="_blank" rel="noopener" class="btn btn-lime" style="width:100%; justify-content:center; margin-bottom:16px;">Open 2025 Google Form →</a>
+      <p id="lb-message" style="font-size:1rem; color:var(--text-secondary); line-height:1.7; margin-bottom:8px;"></p>
+      <p id="lb-cta" style="font-size:1rem; color:var(--text-primary); font-weight:600; margin-bottom:24px;"></p>
+      <a id="lb-button" href="#" target="_blank" rel="noopener" class="btn btn-lime" style="width:100%; justify-content:center; margin-bottom:16px;"></a>
       <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:24px;">
         Email for more information:<br>
-        <a href="mailto:KlemsenConsulting@gmail.com" style="color:var(--blue); font-weight:600;">KlemsenConsulting@gmail.com</a>
+        <a id="lb-email" href="#" style="color:var(--blue); font-weight:600;"></a>
       </p>
       <div style="border-top:1px solid var(--border); padding-top:16px; display:flex; justify-content:space-between; align-items:center;">
         <button id="lightbox-dismiss" style="background:none; border:none; font-size:.85rem; color:var(--text-muted); cursor:pointer; text-decoration:underline;">Don't show again</button>
@@ -275,9 +276,7 @@
     var overlay = document.getElementById('lightbox-overlay');
     var dismissed = false;
     try { dismissed = window.localStorage.getItem('klemsen_lightbox_dismissed') === '1'; } catch(e) {}
-    if (!dismissed) {
-      setTimeout(function() { overlay.style.display = 'flex'; }, 800);
-    }
+
     function closeLB() { overlay.style.display = 'none'; }
     function dismissLB() {
       try { window.localStorage.setItem('klemsen_lightbox_dismissed', '1'); } catch(e) {}
@@ -287,7 +286,35 @@
     document.getElementById('lightbox-close2').addEventListener('click', closeLB);
     document.getElementById('lightbox-dismiss').addEventListener('click', dismissLB);
     overlay.addEventListener('click', function(e) { if (e.target === overlay) closeLB(); });
+
+    if (!dismissed) {
+      fetch('data/lightbox.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          if (!data.enabled) return;
+          document.getElementById('lb-heading').textContent = data.heading;
+          document.getElementById('lb-message').textContent = data.message;
+          document.getElementById('lb-cta').textContent = data.cta_text;
+          document.getElementById('lb-button').textContent = data.button_text;
+          document.getElementById('lb-button').href = data.form_url;
+          document.getElementById('lb-email').textContent = data.email;
+          document.getElementById('lb-email').href = 'mailto:' + data.email;
+          setTimeout(function() { overlay.style.display = 'flex'; }, 800);
+        })
+        .catch(function() {});
+    }
   })();
+  </script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
