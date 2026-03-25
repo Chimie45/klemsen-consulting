@@ -258,14 +258,14 @@ img { max-width: 100%; height: auto; }
   .cta-banner h2 { font-size: 1.5rem; }
 
   /* About grid */
-  .about-grid { gap: 32px; }
+  .about-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
   .about-grid img { aspect-ratio: 4/3 !important; }
 
   /* Contact grid */
-  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .contact-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
 
   /* Two column */
-  .two-col { gap: 16px; }
+  .two-col { grid-template-columns: 1fr !important; gap: 16px !important; }
 
   /* Featured service cards */
   .featured-svc { padding: 32px !important; }
