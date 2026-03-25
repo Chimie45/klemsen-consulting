@@ -259,7 +259,6 @@ img { max-width: 100%; height: auto; }
 
   /* About grid */
   .about-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
-  .about-grid img { aspect-ratio: 4/3 !important; }
 
   /* Contact grid */
   .contact-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
