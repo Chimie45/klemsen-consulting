@@ -1,20 +1,12 @@
 {
   "services": [
     {
-      "number": 1,
+      "number": 3,
       "name": "Expat Federal Package",
       "price_usd": "From $200",
       "price_krw": "₩200,000",
       "description": "The standard expat package suits most clients with salary income. Includes Form 1040, Schedule A & B, Form 2555/1116, Form 8965, healthcare paperwork, Schedule 1, and a comprehensive IRS disclosure.",
       "note": "FBAR fees are $25 / ₩25,000 per account (not included)"
-    },
-    {
-      "number": 3,
-      "name": "Spousal Visa Package",
-      "price_usd": "$200–420",
-      "price_krw": "₩200,000–420,000",
-      "description": "Depending on your tax and salary history, and how you plan to go about obtaining the spousal visa, one to three years of tax history can be requested. Contact us and let us help you prepare for re-entry to America with your spouse.",
-      "note": ""
     },
     {
       "number": 2,
@@ -23,6 +15,14 @@
       "price_krw": "₩900,000",
       "description": "Perfect for expats 5+ years behind. The Streamlined Foreign Offshore Procedure wipes the slate clean. Includes certification, current year federal, and three back years. Sample tax narratives provided.",
       "note": "FBAR reporting may be required at additional cost"
+    },
+    {
+      "number": 1,
+      "name": "Spousal Visa Package",
+      "price_usd": "$200–420",
+      "price_krw": "₩200,000–420,000",
+      "description": "Depending on your tax and salary history, and how you plan to go about obtaining the spousal visa, one to three years of tax history can be requested. Contact us and let us help you prepare for re-entry to America with your spouse.",
+      "note": ""
     },
     {
       "number": 4,
