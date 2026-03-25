@@ -288,9 +288,10 @@
     overlay.addEventListener('click', function(e) { if (e.target === overlay) closeLB(); });
 
     if (!dismissed) {
-      fetch('data/lightbox.json')
+      fetch('data/homepage.json')
         .then(function(r) { return r.json(); })
-        .then(function(data) {
+        .then(function(page) {
+          var data = page.lightbox;
           if (!data.enabled) return;
           document.getElementById('lb-heading').textContent = data.heading;
           document.getElementById('lb-message').textContent = data.message;

@@ -9,23 +9,144 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "settings"
-    label: "Site Content"
+  - name: "pages"
+    label: "Pages"
     files:
-      - name: "lightbox"
-        label: "Homepage Popup"
-        file: "data/lightbox.json"
-        fields:
-          - { label: "Show Popup", name: "enabled", widget: "boolean", default: true, hint: "Turn the popup on or off" }
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Message", name: "message", widget: "text" }
-          - { label: "Bold Text (below message)", name: "cta_text", widget: "string" }
-          - { label: "Google Form URL", name: "form_url", widget: "string" }
-          - { label: "Button Label", name: "button_text", widget: "string" }
-          - { label: "Email Address", name: "email", widget: "string" }
 
+      # ═══════════════════════════
+      # HOMEPAGE
+      # ═══════════════════════════
+      - name: "homepage"
+        label: "Homepage"
+        file: "data/homepage.json"
+        fields:
+          - label: "Popup (Lightbox)"
+            name: "lightbox"
+            widget: "object"
+            fields:
+              - { label: "Show Popup", name: "enabled", widget: "boolean", default: true }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Message", name: "message", widget: "text" }
+              - { label: "Bold Text", name: "cta_text", widget: "string" }
+              - { label: "Google Form URL", name: "form_url", widget: "string" }
+              - { label: "Button Label", name: "button_text", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+
+          - label: "Tax Season Note"
+            name: "tax_season_note"
+            widget: "string"
+            hint: "Small text above the main heading"
+
+          - label: "Hero Heading Line 1"
+            name: "hero_line1"
+            widget: "string"
+
+          - label: "Hero Heading Line 2 (italic)"
+            name: "hero_line2"
+            widget: "string"
+
+          - label: "Hero Description"
+            name: "hero_description"
+            widget: "text"
+
+          - label: "Hero Box Title"
+            name: "hero_box_title"
+            widget: "string"
+
+          - label: "Hero Box Services"
+            name: "hero_box_items"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+
+          - label: "Three Key Points"
+            name: "key_points"
+            widget: "list"
+            max: 3
+            min: 3
+            summary: "{{fields.big_word}} {{fields.subtitle}}"
+            fields:
+              - { label: "Big Word", name: "big_word", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Homepage Bio Section"
+            name: "bio_section"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+              - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+
+          - label: "Featured Package 1 (Lime)"
+            name: "package1"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Price USD", name: "price_usd", widget: "string" }
+              - { label: "Price KRW", name: "price_krw", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Featured Package 2 (Dark)"
+            name: "package2"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Price USD", name: "price_usd", widget: "string" }
+              - { label: "Price KRW", name: "price_krw", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "More Services Text"
+            name: "more_services_text"
+            widget: "text"
+            hint: "Paragraph below the two featured packages"
+
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Photo Filename", name: "photo", widget: "string", hint: "e.g. testimonial-dennis.avif" }
+
+      # ═══════════════════════════
+      # ABOUT PAGE
+      # ═══════════════════════════
+      - name: "about"
+        label: "About Page"
+        file: "data/about.json"
+        fields:
+          - label: "Header Quote"
+            name: "header_quote"
+            widget: "string"
+
+          - label: "Photo Info"
+            name: "photo_info"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Experience", name: "experience", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+
+          - label: "Bio Heading"
+            name: "bio_heading"
+            widget: "string"
+
+          - label: "Bio Paragraphs"
+            name: "bio_paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+
+      # ═══════════════════════════
+      # SERVICES PAGE
+      # ═══════════════════════════
       - name: "services"
-        label: "Service Prices"
+        label: "Services Page"
         file: "data/services.json"
         fields:
           - label: "Services"
@@ -40,20 +161,25 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Note (optional)", name: "note", widget: "string", required: false }
 
-      - name: "contact"
-        label: "Contact Info"
-        file: "data/contact.json"
+      # ═══════════════════════════
+      # KOREAN TAXES PAGE
+      # ═══════════════════════════
+      - name: "korean_taxes"
+        label: "Korean Taxes Page"
+        file: "data/korean-taxes.json"
         fields:
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Phone Note", name: "phone_note", widget: "string" }
-          - { label: "Location", name: "location", widget: "string" }
-          - { label: "Location Note", name: "location_note", widget: "string" }
-          - { label: "Payment Methods", name: "payment", widget: "string" }
-          - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+          - label: "Partner Name", name: "name", widget: "string"
+          - label: "Partner English Name", name: "english_name", widget: "string"
+          - label: "Email", name: "email", widget: "string"
+          - label: "Phone", name: "phone", widget: "string"
+          - label: "Office Address", name: "office", widget: "string"
+          - label: "Referral Note", name: "referral_note", widget: "text"
 
+      # ═══════════════════════════
+      # FAQ PAGE
+      # ═══════════════════════════
       - name: "faq"
-        label: "FAQ"
+        label: "FAQ Page"
         file: "data/faq.json"
         fields:
           - label: "Questions"
@@ -64,13 +190,17 @@ collections:
               - { label: "Question", name: "question", widget: "string" }
               - { label: "Answer", name: "answer", widget: "text" }
 
-      - name: "korean_taxes"
-        label: "Korean Taxes Partner"
-        file: "data/korean-taxes.json"
+      # ═══════════════════════════
+      # CONTACT PAGE
+      # ═══════════════════════════
+      - name: "contact"
+        label: "Contact Page"
+        file: "data/contact.json"
         fields:
-          - { label: "Partner Name", name: "name", widget: "string" }
-          - { label: "Partner English Name", name: "english_name", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Office Address", name: "office", widget: "string" }
-          - { label: "Referral Note", name: "referral_note", widget: "text" }
+          - { label: "Phone Note", name: "phone_note", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Location Note", name: "location_note", widget: "string" }
+          - { label: "Payment Methods", name: "payment", widget: "string" }
+          - { label: "Facebook URL", name: "facebook_url", widget: "string" }

@@ -1,0 +1,75 @@
+{
+  "lightbox": {
+    "enabled": true,
+    "heading": "The 2025 US Tax Season",
+    "message": "The new tax season opens in late January 2026!",
+    "cta_text": "Get started today!",
+    "form_url": "https://forms.gle/p6eoURRnNBSUs1687",
+    "button_text": "Open 2025 Google Form →",
+    "email": "KlemsenConsulting@gmail.com"
+  },
+  "tax_season_note": "— The 2025 tax season is now open —",
+  "hero_line1": "Your taxes.",
+  "hero_line2": "Uncomplicated.",
+  "hero_description": "We know expat taxes! The tax professionals at Tax Uncomplicated and Klemsen Consulting are dedicated to assisting you in filing your US federal and state taxes. From teachers to business men and women, business owners and stay at home spouses, we are happy to help.",
+  "hero_box_title": "Complete Expat Tax Filing",
+  "hero_box_items": [
+    "Federal & State Tax Returns",
+    "FBAR & FATCA Compliance",
+    "Back Taxes & Catch-up Filing",
+    "Streamlined Offshore Procedure",
+    "Stock & Investment Reporting",
+    "Spousal Visa Tax Packages"
+  ],
+  "key_points": [
+    {
+      "big_word": "Global",
+      "subtitle": "Expertise",
+      "description": "Clients across Korea, Japan, China, Europe, and beyond. We work remotely with expats everywhere."
+    },
+    {
+      "big_word": "Zero",
+      "subtitle": "Penalties",
+      "description": "No client has ever been fined or penalized for late filing. Our thorough disclosures protect you."
+    },
+    {
+      "big_word": "Clear",
+      "subtitle": "Process",
+      "description": "Simple checklists, upfront quotes, and fast response times. No surprises, no pressure."
+    }
+  ],
+  "bio_section": {
+    "heading": "A specialty built on real experience",
+    "paragraph1": "Having lived overseas for more than 17 years, Katie has developed deep expertise in preparing tax returns for US expats — including FBARs, FATCA compliance, and navigating the unique complexities of living and earning abroad.",
+    "paragraph2": "You'll never feel rushed or pressured. Just honest, upfront quotes and a genuine commitment to making you happy."
+  },
+  "package1": {
+    "label": "Most Popular",
+    "name": "Expat Federal Package",
+    "price_usd": "From $200",
+    "price_krw": "₩200,000",
+    "description": "Standard federal filing for salaried expats. Includes Form 1040, Schedule A & B, Form 2555/1116, healthcare paperwork, and a comprehensive IRS disclosure."
+  },
+  "package2": {
+    "label": "Catch-Up Filing",
+    "name": "Streamlined Package",
+    "price_usd": "$900",
+    "price_krw": "₩900,000",
+    "description": "5+ years behind? The Streamlined Foreign Offshore Procedure wipes the slate clean. Includes current year + three back years of federal taxes."
+  },
+  "more_services_text": "We also offer back tax filing, spousal visa packages, state taxes, FBAR reporting, stock sales reporting, and more — 9 packages in total to cover every situation.",
+  "testimonials": [
+    {
+      "quote": "Katie and Allen are professional and thorough. I came to Korea not understanding the extent of my filing duties and neglected my taxes for years. The process of completing my back taxes was made painless with Klemsen Consulting. I've stayed current for 3 years and continue to be a loyal customer.",
+      "name": "Dennis John Battistella, Jr.",
+      "role": "Long-term Expat Client",
+      "photo": "testimonial-dennis.avif"
+    },
+    {
+      "quote": "Katie's patient service turned the process of years of overseas back tax filing from an overwhelming mission impossible, to a simple and manageable task. Everything I needed was outlined in a clear checklist. Response time was incredibly fast, and all questions were treated kindly.",
+      "name": "Jemma Abbate",
+      "role": "Back Tax Filing Client",
+      "photo": "testimonial-jemma.avif"
+    }
+  ]
+}
