@@ -86,8 +86,8 @@ img { max-width: 100%; height: auto; }
 .nav-cta::after { display: none !important; }
 .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
 .nav-hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all .3s; }
-.nav-mobile { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--slate); padding: 24px; border-bottom: 1px solid rgba(255,255,255,.08); flex-direction: column; gap: 16px; z-index: 999; }
-.nav-mobile a { font-size: .95rem; font-weight: 500; color: rgba(255,255,255,.55); padding: 8px 0; }
+.nav-mobile { display: none; position: fixed; top: 64px; left: 0; right: 0; background: var(--slate); padding: 20px 24px 28px; border-bottom: 1px solid rgba(255,255,255,.08); flex-direction: column; gap: 4px; z-index: 999; }
+.nav-mobile a { font-size: 1rem; font-weight: 500; color: rgba(255,255,255,.55); padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
 .nav-mobile a:hover, .nav-mobile a.active { color: var(--white); }
 .nav-mobile.open { display: flex; }
 
@@ -218,18 +218,107 @@ img { max-width: 100%; height: auto; }
   .two-col { grid-template-columns: 1fr; }
   .three-col-divider { grid-template-columns: 1fr; gap: 40px; }
   .three-col-divider .vr { width: 60px; height: 1px; margin: 0 auto; }
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
 @media (max-width: 768px) {
+  /* Nav */
   .nav-links { display: none !important; }
   .nav-hamburger { display: flex; }
-  .hero { min-height: auto; padding-top: 110px; padding-bottom: 60px; }
-  .hero h1 { font-size: 2.4rem; }
-  .section { padding: 64px 0; }
+  .nav-inner { height: 64px; }
+  .nav-logo-img { height: 32px; }
+
+  /* General spacing */
+  .container { padding: 0 20px; }
+  .section { padding: 56px 0; }
+  .section-sm { padding: 40px 0; }
+
+  /* Typography */
+  h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+  h2 { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  h3 { font-size: clamp(1.1rem, 4vw, 1.4rem); }
+
+  /* Hero */
+  .hero { min-height: auto; padding-top: 100px; padding-bottom: 56px; }
+  .hero h1 { font-size: 2.2rem; }
+  .hero-sub { font-size: 1rem; }
+
+  /* Page headers */
+  .page-header { padding: 100px 0 40px; }
+  .page-header h1 { font-size: 1.8rem; }
+
+  /* Footer */
+  .footer { padding: 56px 0 32px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-brand img { height: 72px !important; }
   .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
-  .cta-banner { padding: 40px 24px; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .about-grid { gap: 40px; }
-  .page-header { padding: 110px 0 48px; }
-  .page-header h1 { font-size: 2rem; }
+
+  /* CTA banner */
+  .cta-banner { padding: 36px 20px; }
+  .cta-banner h2 { font-size: 1.5rem; }
+
+  /* About grid */
+  .about-grid { gap: 32px; }
+  .about-grid img { aspect-ratio: 4/3 !important; }
+
+  /* Contact grid */
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+
+  /* Two column */
+  .two-col { gap: 16px; }
+
+  /* Featured service cards */
+  .featured-svc { padding: 32px !important; }
+  .featured-svc h3 { font-size: 1.3rem !important; }
+
+  /* Testimonial cards */
+  .testimonial-card { padding: 28px; }
+  .testimonial-card::before { font-size: 3.5rem; top: 10px; left: 20px; }
+
+  /* FAQ */
+  .faq-question { font-size: 1.05rem; }
+
+  /* Tax tables */
+  .tax-table th, .tax-table td { padding: 10px 14px; font-size: .8rem; }
+
+  /* Buttons */
+  .btn { padding: 14px 24px; font-size: .85rem; }
+
+  /* Section labels */
+  .section-label { font-size: .7rem; }
+
+  /* Service page numbered items */
+  .svc { grid-template-columns: 50px 1fr; gap: 0 16px; padding: 28px 0; }
+  .svc-num { font-size: 2rem; }
+  .svc h3 { font-size: 1.15rem; }
+
+  /* Korean taxes fee tables side by side -> stacked */
+  #fee-tables { grid-template-columns: 1fr !important; }
+  #partner-info { grid-template-columns: 1fr !important; gap: 20px !important; }
+
+  /* Key points and steps grids */
+  #key-points, #steps-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  #key-points > .kp-divider, #steps-grid > div[style*="width:1px"] { width: 60px !important; height: 1px !important; margin: 0 auto; }
+
+  /* About page sticky sidebar -> normal flow */
+  .about-grid > div:first-child { position: static !important; }
+
+  /* Forms */
+  .form-input, .form-textarea { padding: 12px 14px; font-size: .9rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.8rem; }
+  .hero h1 { font-size: 1.9rem; }
+  .hero-sub { font-size: .9rem; }
+  .btn { padding: 12px 20px; font-size: .82rem; width: 100%; justify-content: center; }
+  .cta-banner .btn { width: auto; }
+  .footer-brand img { height: 60px !important; }
+  .svc { grid-template-columns: 1fr; }
+  .svc-num { margin-bottom: 4px; font-size: 1.6rem; }
+  .featured-svc { padding: 24px !important; }
+  .testimonial-card { padding: 24px; }
+  .tax-table th, .tax-table td { padding: 8px 10px; font-size: .75rem; }
+  .form-group { margin-bottom: 14px; }
+  div[style*="grid-template-columns: 1fr 1fr"][style*="gap: 20px"] { grid-template-columns: 1fr !important; }
 }
