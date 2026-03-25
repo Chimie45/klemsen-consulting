@@ -168,12 +168,12 @@ collections:
         label: "Korean Taxes Page"
         file: "data/korean-taxes.json"
         fields:
-          - label: "Partner Name", name: "name", widget: "string"
-          - label: "Partner English Name", name: "english_name", widget: "string"
-          - label: "Email", name: "email", widget: "string"
-          - label: "Phone", name: "phone", widget: "string"
-          - label: "Office Address", name: "office", widget: "string"
-          - label: "Referral Note", name: "referral_note", widget: "text"
+          - { label: "Partner Name", name: "name", widget: "string" }
+          - { label: "Partner English Name", name: "english_name", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Office Address", name: "office", widget: "string" }
+          - { label: "Referral Note", name: "referral_note", widget: "text" }
 
       # ═══════════════════════════
       # FAQ PAGE
